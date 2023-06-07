@@ -3,6 +3,15 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hello! Thank you for visitin my personal website!
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+My name is Adri, I'm a 30 year-old grad Ph.D. student at the Cognitive Sciences department of the University of California Irvine. During my time there, I've been blessed with the opportunity to work with Jeff Rouder, Michael D. Lee and Joachim Vandekerckhove, (words cannont express how lucky I am!).
+
+As a Cognitive Scientist, I am interested in the application of Bayesian methods.
+
+As a sentient being, I choose to believe that happiness begins with a touch of kindness. 
+
+# Ice breakers (?)
+1. 
+2. I am really into ASMR, it helps me sleep when I'm under a lot of stress.
+3. I have a strong interest in making statistics as accessible as possible.
