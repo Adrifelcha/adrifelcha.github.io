@@ -1,6 +1,6 @@
 ---
-title: "Posts by Tag"
-permalink: /tags/
+title: "Conferences"
+permalink: /conferences/
 layout: tags
 author_profile: true
 ---
