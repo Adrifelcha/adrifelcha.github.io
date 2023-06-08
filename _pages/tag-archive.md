@@ -1,6 +1,6 @@
 ---
-title: "Conferences"
-permalink: /conferences/
+title: "Presentations"
+permalink: /presentations/
 layout: tags
 author_profile: true
 ---
