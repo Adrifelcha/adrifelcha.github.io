@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	  
+  <link rel="icon" href="/iconito-32x32.png">
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+<style>
+header {
+    padding: 1em;
+    color: white;
+    background: black;
+    text-align: center;
+    border: 10px solid black;
+}
+	
+footer {
+    padding: 1em;
+    color: white;
+    background: black;
+    clear: left;
+    border: 1px solid gray;
+    text-align: center;
+}
+article {
+	margin: 0 auto;
+	width:87%;
+    	padding: 1em;
+    	overflow: hidden;
+	text-align: justify;
+	color: black;
+	}
+body {
+    width: 100%;
+    background-color: #d4edfc;
+}
+	
+.column {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    height: 900px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+		  
+hr.style2 {
+	border-top: 3px double #8c8b8b;
+}
+hr.style3 {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0;
+}
+a.orange {
+    color: #a04010;
+    text-decoration: underline;
+}
+a.dark {
+    color: #2E2E2E;
+    text-decoration: underline;
+}
+	
+div.left {
+  float: left;
+  text-align: center;
+  display: inline;
+  width: 33%;
+height:500px;
+  border: 2px solid #b26931;
+background-color:#e0c398;
+}
+div.center {
+  float: left;
+  text-align: center;
+  display: inline;
+  width: 33%;
+	height:500px;
+  border: 2px solid #b26931;
+	background-color:#eddac2;
+}
+div.right {
+  float: left;
+  text-align: center;
+  display: inline;
+  width: 33%;
+	height:500px;
+      border: 2px solid #b26931;
+	background-color:#e0c398;
+}
+	
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+    text-align: justify;
+    margin-left:30px;
+    margin-top:10px;
+}
+	
+h2 {
+    font-size: 43px;
+    font-family: sans-serif;
+    color: #0f6096;
+    text-align: justify;
+    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    margin-bottom:30px;
+}
+	
+h3 {
+    font-size: 33px;
+    margin-left: 120px;
+    font-family: sans-serif;
+    color: #0f6096;
+    text-align: justify;
+    margin-bottom:20px;	
+    }	
+
+h4 {
+    font-size: 23px;
+    font-family: sans-serif;
+    color: #0f6096;
+    text-align: justify;
+    margin-left: 60px;
+    margin-bottom:20px;
+    }		
+	
+ul {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+    text-align: justify;
+   list-style-type: square;
+   margin-left: 40px;
+   margin-bottom:15px;
+}
+	
+/* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px 15px 15px 5px;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c9eaff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #8ed3ff; font-weight:bold;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #1471ad; font-weight:bold;}
+	
+	.no-drop {cursor: no-drop;}
+
+.topnav-right {
+  float: right;
+}
+  </style>
+	  
+  </head>
+  <body>
+  <a href="/"><img class='displayed' style="float:left; border: 6px solid black; height="280" width="280";" src="/LabPictures/Lab25_logo_2015.png" alt="lab25" ></a>
+          <div style="float:right;"> 
+	  <div class="dropdown">
+  <button class="dropbtn" style="border-radius: 15px 15px 0px 0px; margin-top: 30px;"><a href="/collabs/Bouzas-Lee.html" style="color:white;text-decoration: none;">Start</a></button>
+</div>
+	  <div class="dropdown">
+  <button class="dropbtn" style="border-radius: 15px 15px 0px 0px; margin-top: 30px;"><a href="" class="no-drop" style="color:white;text-decoration: none;">History</a></button>
+  <div class="dropdown-content" style="  width: 200px;">
+    <a href="/collabs/pictures.html">Pictures!</a>
+   </div>
+</div>
+   <div class="dropdown">
+  <button class="dropbtn" style="border-radius: 15px 0px 0px 0px;margin-top: 30px;"><a href=""/collabs/schedules_march2019.html"" style="color:white;text-decoration: none;">All about the March 2019 meeting!</a></button>
+  <div class="dropdown-content" style="  width: 200px;">
+    <a href="/collabs/presenters_march2019_Lee.html">About the presenters</a>
+    <a href="/collabs/schedules_march2019.html">Talks & Schedules</a>
+    </div>
+		   </div>
+	  </div>
+	  <br><br><br>
+        <header>
+		<h1 style="font-size:30px">Official website about the Michael Lee & colleagues visit to Lab25</h1>
+		<h1 style="font-size:20px">From March 23 to March 28, 2019</h1>
+		
+	  </header>
+	  <div style="float:right;">
+	    	  <div class="dropdown" style="width:150px;">
+   <button class="dropbtn" style="border-radius: 0px 0px 15px 15px; font-size:14px; padding:2px;"><a href="/" style="color:white;"><i class="fa fa-rocket" aria-hidden="true"></i> Go to Lab25 website!</a></button>
+		   </div>
+                   <div class="dropdown" style="width:160px;">
+   <button class="dropbtn" style="border-radius: 0px 0px 0px 15px;  font-size:14px; padding:2px;"><a href="https://faculty.sites.uci.edu/mdlee/lab/" style="color:white;"><i class="fa fa-rocket" aria-hidden="true"></i> Go to Michael Lee's Laboratory website!</a></button>
+			   </div>
+	  </div>
+	  <br><br><br><br>
+    <article>
+	    
+    
+      {{ content }}
+
+    </article>
+	  
+      <footer class="site-footer">
+	      <font color="white">
+	<a href="mailto:adrifelcha@gmail.com"><font color="white"><i class="fa fa-envelope" aria-hidden="true"></i> Contact the Website administrator for more info! <i class="fa fa-envelope" aria-hidden="true"></i></font></a>
+	      </font>
+      </footer>
+
+    </body>
+</html>

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+	<html>
+		<head>
+		 <link rel="icon" href="http://bouzaslab25.com/favicon.png">
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+			<style>
+				/* Dropdown Menu */
+.mainnav{
+	float:left;
+	margin: 0 auto;
+	z-index: 4;}
+.dropdown{
+	position: absolute; 
+	opacity: 0;
+	visibility: hidden;
+	transition: ease-out .35s;
+	-moz-transition: ease-out .35s;
+	-webkit-transition: ease-out .35s;
+	z-index: 4;
+	width:170px;}
+.mainnav li{
+	float: left;
+	padding: 2px;
+	background: black;
+	color: white;
+	border-left: 1px dotted #fff;
+	list-style: none;}
+.mainnav li:first-child{border: none;}
+.mainnav li a{ display: block;padding: 2px 10px;color: #fff;font-family: arial;text-decoration: none;}
+.mainnav li:hover{background: #0E4D4D;transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
+.mainnav li:hover a{color: black;transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;text-decoration: none;}
+/*First Level*/
+.subs {background:#827660; font-size:15px; left: -45px;position: relative;top: 0px;width: 200px;border-left: none !important; border-bottom: 1px dotted #fff !important;}
+.subs:last-child{border: none !important;}
+.hassubs:hover .dropdown,.hassubs .hassubs:hover .dropdown{opacity: 1;visibility: visible; transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
+.mainnav li:hover ul a,.mainnav li:hover ul li ul li a{color: white;text-decoration: none;, font: bold;}
+.mainnav li ul li:hover,.mainnav li ul li ul li:hover{background: #B5C3C3;transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
+.mainnav li ul li:hover a,.mainnav li ul li ul li:hover a{color: black;transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;text-decoration: none;}
+/*Second Level*/
+.hassubs .hassubs .dropdown .subs{left: 80px;position: relative;width: 200px;top: 0px;}
+.hassubs .hassubs .dropdown{position: absolute;width: 250px;left: 80px;top: 0px;opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
+.topnav-right {
+  float: right;
+}
+			</style>
+				</head>
+		
+		
+		
+		
+		
+		<body>
+
+			 
+<ul class="mainnav">
+  <li><a href="/" style="color:white;text-decoration: none;">HOME</a></li>
+  <li><a href="/about/" style="color:white;text-decoration: none;">About</a></li>
+
+  <li class="hassubs"><a href="/publications/" style="color:white;text-decoration: none;">Publications</a>
+     	<ul class="dropdown">
+		<li class="subs"><a href="/publications/">Projects</a></li>
+		<li class="subs"><a href="/publications/index.html#Papers">Papers</a></li>
+		<li class="subs"><a href="/publications/index.html#Chapters">Chapters</a></li>
+    		<li class="subs"><a href="/publications/index.html#Conferences">Conferences and presentations</a></li>
+		<li class="subs"><a href="/publications/index.html#Symposia">Symposia</a></li>
+		<li class="subs"><a href="/publications/index.html#Posters">Posters</a></li>
+		<li class="subs"><a href="/publications/index.html#Thesis">Thesis</a></li>
+	</ul>
+  </li>
+   	<li class="hassubs"><a href="/people/" style="color:white;text-decoration: none;">People</a></button>
+	<ul class="dropdown">
+		<li class="subs"><a href="/people/arturo.html">Arturo Bouzas</a></li>
+		<li class="subs"><a href="/people/">Members</a></li>
+		<li class="subs"><a href="/people/collaborators.html">Collaborators</a></li>
+		<li class="subs"><a href="/people/alumni.html">Alumni</a></li>
+	</ul>
+   	</li>
+  <li><a href="/events/" style="color:white;text-decoration: none;">Events</a></li>
+  <li class="hassubs"><a href="/collabs/Bouzas-Lee.html" style="color:white;text-decoration: none;">Collaborations</a>
+	<ul class="dropdown">
+	<li class="subs"><a href="/collabs/Bouzas-Lee.html">Michael Lee!!</a></li>
+	</ul>
+  </li>
+   	<li class="hassubs"><a href="/cursos/" style="color:white;text-decoration: none;">Cursos</a></button>
+	<ul class="dropdown">
+		<li class="subs"><a href="/cursos/ACAII.html">ACA II</a></li>
+		<li class="subs"><a href="/cursos/ACAIII.html">ACA III</a></li>
+	</ul>
+   	</li>		
+</li></ul>
+
+			<br><br>
+		<center>
+				<h1 style="font-family:'Georgia'">Lab 25</h1> </center>
+			</center>
+			<div class="container">
+
+
+			
+			{{ content }}
+			
+			</div>
+				<!-- /.container -->
+			<footer>
+				<hr class="style2">
+	    		<ul>
+				<li><a href="https://github.com/BouzasLab25"><i class="fa fa-github"></i> github.com/BouzasLab25</a></li>
+				</ul>
+			</footer> 	
+		</body>
+	</html>
