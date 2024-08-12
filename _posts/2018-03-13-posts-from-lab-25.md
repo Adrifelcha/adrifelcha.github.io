@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Felisa's thesis defense
+title: My Bachelor's thesis defense!
 date: 2018-03-13
 ---
 
 ### Felisa's thesis defense
 
-On March 13th, 2018, Felisa got her B.A. in Psychology by defending her thesis "Studies on Signal Detection".
+On March 13th, 2018, I obtained my B.A. in Psychology by defending her thesis "Studies on Signal Detection".
 
 ____  
 
@@ -25,4 +25,3 @@ ____
 
 ![Alt text](/LabPictures/Fel_Ex1.jpg)
 
-Felisa and her I'm-glad-I-didn't-die-out-of-anxiety-today smile!
