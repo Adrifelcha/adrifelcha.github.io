@@ -3,11 +3,20 @@ layout: default
 title: Personal and academic life updates!
 ---
 
-	<h2>{{ page.title }}</h2>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	    <br>
-	  {% endfor %}
-	</ul>
+<div class="publications-container">
+    <div class="section-container">
+        <h2 class="section-title">Life Updates!</h2>
+        <div class="blog-list">
+            {% for post in site.posts %}
+            <div class="blog-item">
+                <div class="blog-content">
+                    <h4 class="post-date">{{ post.date | date_to_string }}</h4>
+                    <div class="post-title">
+                        <a href="{{ post.url }}" class="blog-link">{{ post.title }}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
