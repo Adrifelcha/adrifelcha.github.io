@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Michael Lee 4th visit to Lab25, this time, bringing some colleagues with him!
+title: I met future friends and collaborators (Joachim Vandekerckhove, Holly Westfall, Alex Etz) when Michael visits the UNAM again!
 date: 2019-03-24
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Bachelor's thesis defense!
+title: Bachelor's thesis defense! (B.A. in Psychology)
 date: 2018-03-13
 ---
 

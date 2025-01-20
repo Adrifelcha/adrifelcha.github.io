@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VI SINCA (International Seminar about Behavior and Applications)
+title: Conference presentation at SINCA (Tlaxcala, Mexico)
 date: 2017-11-14
 ---
 

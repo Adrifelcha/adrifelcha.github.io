@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MathPsych/ICCM 2019 - Poster presentations!
+title: Poster presentation at MathPsych (Montreal, Canada)
 date: 2019-07-20
 ---
 

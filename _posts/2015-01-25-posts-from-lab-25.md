@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I joined Lab 25 (Undergrad)
+title: Undergraduate Research starts - I joined Lab 25 (led by Arturo Bouzas)
 date: 2015-01-25
 ---
 
