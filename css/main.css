@@ -353,7 +353,7 @@ hr.style18:before {
     align-items: center;
     gap: 40px;
     margin: 40px 60px;
-    padding: 30px;
+    padding: 3px 30px 30px 30px;  /* Reduced top padding from 7px to 3px */
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #BF8B5E;
     border-radius: 15px;
