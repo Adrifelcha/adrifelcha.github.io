@@ -351,26 +351,27 @@ hr.style18:before {
 .profile-section {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    width: 800px;
-    margin: 2rem auto;
-    padding: 3rem;
-    background-color: #FFFFFF;
+    gap: 40px;
+    margin: 40px 60px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #BF8B5E;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(87, 49, 12, 0.15);
-    border: 1px solid #BF8B5E;
 }
 
 .profile-image {
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
 }
 
 .bio-content {
-    flex: 1;
+    padding: 20px;
+    flex-grow: 1;
 }
 
 .bio-text {
@@ -730,6 +731,11 @@ hr.style18:before {
 
 .nav-label:hover {
     color: white;  /* prevents color change on hover */
+}
+
+.emphasis {
+    font-weight: bold;
+    color: #8b4513;  /* matches the brown color used in section titles */
 }
 
 
