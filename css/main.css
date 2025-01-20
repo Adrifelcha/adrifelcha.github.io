@@ -666,6 +666,16 @@ hr.style18:before {
     margin-top: 20px;
 }
 
+.blog-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.blog-item-link:hover {
+    text-decoration: none;  /* Prevents underlining on hover */
+}
+
 .blog-item {
     margin-bottom: 15px;
     padding: 15px 25px;
@@ -676,9 +686,10 @@ hr.style18:before {
     transition: all 0.3s ease;
 }
 
-.blog-item:hover {
+.blog-item-link:hover .blog-item {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(87, 49, 12, 0.15);
+    background: rgba(191, 139, 94, 0.2);  /* Increased opacity from 0.1 to 0.2 */
 }
 
 .blog-content {
@@ -700,6 +711,7 @@ hr.style18:before {
     text-align: right;
     padding-right: 20px;
     border-right: 1px solid #BF8B5E;
+    text-decoration: none;  /* Ensures dates never get underlined */
 }
 
 .post-date .year {
@@ -715,13 +727,6 @@ hr.style18:before {
     font-size: 1.15em;
     font-family: 'Georgia';
     font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.blog-link:hover {
-    color: #8b4513;
-    text-decoration: none;
 }
 
 .post-excerpt {
