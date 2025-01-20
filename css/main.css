@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: #E8D9DB;
+    background-color: #FAF0E1;
 }
 
 
@@ -365,7 +365,7 @@ hr.style18:before {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -532,6 +532,132 @@ hr.style18:before {
 /* Remove extra breaks in the layout */
 .container {
     margin-top: 0;  /* Remove extra top space from container */
+}
+
+/* Publications Page Styling */
+.publications-container {
+    max-width: 1200px;
+    margin: 60px auto 20px;
+    padding: 0 20px;
+}
+
+.section-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    padding: 15px 25px;
+}
+
+.section-title {
+    color: #8b4513;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 4px double #8b4513;
+    padding-bottom: 10px;
+}
+
+.publication-list h3 {
+    text-align: left;
+    font-weight: 600;
+    color: #8b4513;
+    font-size: 24px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    padding-left: 0;
+    text-transform: uppercase;
+}
+
+.publication-item {
+    margin-bottom: 30px;
+}
+
+.pub-content {
+    text-align: justify;
+    margin-left: 28px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.pub-content::before {
+    content: "➤";
+    color: #8b4513;
+    position: absolute;
+    left: -28px;
+    top: 0;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.citation {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 90%;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.pub-links {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 16px;    /* Increased font size for the buttons */
+}
+
+.pub-content h4 {
+    color: #333;
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.authors {
+    color: #666;
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.journal {
+    color: #444;
+    margin: 5px 0 15px 0;
+}
+
+.venue {
+    color: #666;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.pub-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;   /* Increased padding to make buttons bigger */
+    background-color: #754B33;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.pub-button:hover {
+    background-color: #50331A;
+    text-decoration: none;
+}
+
+.citation a {
+    color: #8b4513;           /* Same brown as titles */
+    text-decoration: underline;
+    font-size: inherit;       /* Same size as rest of citation */
+}
+
+.citation a:hover {
+    color: #a0522d;          /* Slightly lighter brown on hover */
 }
 
 
