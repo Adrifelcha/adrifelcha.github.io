@@ -8,8 +8,6 @@ date: 2015-01-25
 
 
 ----
-![Alt text](/LabPictures/IMG_5430.JPG)
+![Alt text](/photos/IMG_5430.JPG)
 
-----
-![Alt text](/LabPictures/IMG_5221.jpg)
 
