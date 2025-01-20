@@ -8,15 +8,7 @@ date: 2017-11-14
 
 Members from Lab25 participated in SINCA VI, at Tlaxcala, Tlaxcala. 
 
-
-____  
-
-![Alt text](/LabPictures/IMG_8626.JPG)
-
 **Lab 25 at the Autonomous University of Tlaxcala**
-
-
-![Alt text](/LabPictures/IMG_8597.JPG)
 
 **Symposium: Modelos de adaptabilidad en entornos dinámicos: Estudios sobre detección, preferencias y probabilidad** 
 
