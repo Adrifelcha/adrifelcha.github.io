@@ -384,27 +384,30 @@ hr.style18:before {
 
 .social-links {
     display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .social-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    min-width: 120px;
-    background-color: #754B33;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    text-align: center;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #8b4513;  /* Dark brown background */
+    border: 1px solid #8b4513;
+    border-radius: 20px;
+    color: white;  /* White text */
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .social-button:hover {
-    background-color: #50331A;
-    text-decoration: none;
+    background-color: #BF8B5E;  /* Lighter brown on hover */
+    border-color: #BF8B5E;
+    transform: translateY(-2px);
+}
+
+.social-button i {
+    margin-right: 8px;
 }
 
 .bio-list {
