@@ -367,6 +367,7 @@ hr.style18:before {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     flex-shrink: 0;
+    margin-bottom: 0;  /* Remove any extra margin from the image */
 }
 
 .bio-content {
@@ -1076,6 +1077,54 @@ hr.style18:before {
     background-size: 100% 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;
+}
+
+.email-contact {
+    text-align: center;
+    margin-top: 8px;  /* Consistent spacing after image */
+    margin-bottom: 0;
+}
+
+.email-link {
+    color: #8b4513;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #BF8B5E;
+}
+
+.email-link i {
+    margin-right: 8px;
+}
+
+.github-contact {
+    text-align: center;
+    margin-top: 0;
+}
+
+.github-link {
+    color: #8b4513;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #BF8B5E;
+}
+
+.github-link i {
+    margin-right: 8px;
+}
+
+.profile-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;  /* This controls spacing between all elements */
 }
 
 
