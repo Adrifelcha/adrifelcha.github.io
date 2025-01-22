@@ -38,7 +38,3 @@ For any questions or suggestions about this website, please feel free to:
 - Open an issue in this repository
 - Contact me through my academic email
 - Visit my [GitHub profile](https://github.com/Adrifelcha)
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
