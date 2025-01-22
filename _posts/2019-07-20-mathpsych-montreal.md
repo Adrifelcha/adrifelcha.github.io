@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title: Poster presentation at MathPsych (Montreal, Canada)
 date: 2019-07-20
 ---

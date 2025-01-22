@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title: Poster presentation at OPAM (Boston, Massachussets)
 date: 2016-11-21
 ---

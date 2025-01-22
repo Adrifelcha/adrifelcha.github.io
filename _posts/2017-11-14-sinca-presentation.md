@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title: Conference presentation at SINCA (Tlaxcala, Mexico)
 date: 2017-11-14
 ---

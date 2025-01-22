@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title: Michael Lee visits UNAM (2016) - I learn about Bayesian Modeling!
 date: 2016-06-21
 ---

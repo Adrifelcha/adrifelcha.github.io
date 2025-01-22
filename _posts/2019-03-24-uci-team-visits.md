@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title: I met future friends and collaborators (Joachim Vandekerckhove, Holly Westfall, Alex Etz) when Michael visits the UNAM again!
 date: 2019-03-24
 ---

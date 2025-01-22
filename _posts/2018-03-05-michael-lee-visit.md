@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title: Michael Lee visits UNAM again
 date: 2018-03-05
 ---

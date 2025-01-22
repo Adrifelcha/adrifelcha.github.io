@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: event
 title: Bachelor's thesis defense! (B.A. in Psychology)
 date: 2018-03-13
 ---
