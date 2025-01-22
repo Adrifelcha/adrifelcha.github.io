@@ -803,6 +803,25 @@ hr.style18:before {
         position: static;
         width: 100%;
     }
+
+    .blog-grid {
+        grid-template-columns: 25% 75%;  /* Slightly adjust column ratios on tablets */
+        gap: 10px;
+    }
+
+    .post-date {
+        font-size: 0.9em;
+        padding-right: 10px;
+    }
+
+    .blog-link {
+        font-size: 1em;
+    }
+
+    .blog-item {
+        padding: 12px 15px;
+        margin-bottom: 10px;
+    }
 }
 
 /* For even smaller screens (phones) */
@@ -814,6 +833,89 @@ hr.style18:before {
 
     h2 {
         font-size: 1.5em;
+    }
+
+    .bio-text {
+        font-size: 0.9em;
+    }
+
+    .blog-grid {
+        grid-template-columns: 30% 70%;  /* Further adjust for better readability */
+    }
+
+    .post-date {
+        font-size: 0.85em;
+        padding-right: 8px;
+    }
+
+    .blog-link {
+        font-size: 0.95em;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .publications-container {
+        margin: 10px;
+    }
+}
+
+/* Responsive Design for Main Page */
+@media screen and (max-width: 1200px) {
+    .profile-section {
+        margin: 40px 30px;  /* Reduce side margins */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .profile-section {
+        flex-direction: column;  /* Stack image and content vertically */
+        align-items: center;
+        margin: 20px 20px;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .bio-content {
+        width: 100%;  /* Full width for text content */
+    }
+
+    .bio-text {
+        text-align: left;
+        font-size: 0.95em;
+    }
+
+    .bio-list {
+        padding-left: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 250px;  /* Slightly smaller image on phones */
+        height: 250px;
+    }
+
+    h2 {
+        font-size: 1.8em;
     }
 
     .bio-text {
