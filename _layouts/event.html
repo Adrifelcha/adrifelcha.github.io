@@ -1,16 +1,44 @@
 ---
 layout: default
 ---
-<div class="event-container">
-    <div class="event-content">
-        <div class="event-header">
-            <h2 class="event-title">{{ page.title }}</h2>
-            <div class="event-date">
-                <span class="year">{{ page.date | date: "%Y" }}</span>{{ page.date | date: ", %b %d" }}
-            </div>
+<div class="publications-container">
+    <div class="section-container">
+        <h2 class="section-title">Events & Updates!</h2>
+        <div class="navigation-container">
+            {% if page.previous.url %}
+            <a href="{{ page.previous.url }}" class="nav-arrow prev-arrow" title="{{ page.previous.title }}">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            {% else %}
+            <span class="nav-arrow disabled">
+                <i class="fa fa-chevron-left"></i>
+            </span>
+            {% endif %}
+
+            <a href="/events/" class="back-link">
+                Event list
+            </a>
+
+            {% if page.next.url %}
+            <a href="{{ page.next.url }}" class="nav-arrow next-arrow" title="{{ page.next.title }}">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+            {% else %}
+            <span class="nav-arrow disabled">
+                <i class="fa fa-chevron-right"></i>
+            </span>
+            {% endif %}
         </div>
-        <div class="event-body">
-            {{ content }}
+        <div class="event-content">
+            <div class="event-header">
+                <h2 class="event-title">{{ page.title }}</h2>
+                <div class="event-date">
+                    <span class="year">{{ page.date | date: "%Y" }}</span>{{ page.date | date: ", %b %d" }}
+                </div>
+            </div>
+            <div class="event-body">
+                {{ content }}
+            </div>
         </div>
     </div>
 </div> 
