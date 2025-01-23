@@ -1194,60 +1194,62 @@ hr.style18:before {
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin: 30px 0;
 }
 
 .info-box {
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #BF8B5E;
-    border-radius: 8px;
+    background: transparent;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
-    transition: transform 0.3s ease;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.info-box:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(87, 49, 12, 0.15);
+/* Remove any positioning or floating */
+.origins-box, .education-box, .experience-box, .advisors-box {
+    position: static;
+}
+
+/* Keep responsive design */
+@media screen and (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid .info-box:last-child {
+        grid-column: auto;
+    }
 }
 
 .info-box h3 {
     color: #8b4513;
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 1.3em;
-}
-
-.info-box h3 i {
-    margin-right: 8px;
+    font-size: 1.7em;
 }
 
 .info-box p {
+    color: #333;
     margin: 0;
     line-height: 1.6;
+    font-size: 1.15em;
 }
 
-.info-box p strong {
+.phd-highlight {
     color: #8b4513;
+    font-weight: bold;
 }
 
-.info-box a {
-    color: #8b4513;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.collaborators-box {
+    grid-column: 1 / -1;
+    border: none;
+    background: transparent;
 }
 
-.info-box a:hover {
-    color: #BF8B5E;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
+.collaborators-box p {
+    color: #333;  /* Back to dark color for transparent box */
 }
 
 
