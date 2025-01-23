@@ -25,6 +25,5 @@ This repository contains the source code for my personal academic website, where
 ## Contact
 
 For any questions or suggestions about this website, please feel free to:
-- Open an issue in this repository
-- Contact me through my academic email
+- Email me at achavezd@uci.edu
 - Visit my [GitHub profile](https://github.com/Adrifelcha)
