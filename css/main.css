@@ -1252,4 +1252,17 @@ hr.style18:before {
     color: #333;  /* Back to dark color for transparent box */
 }
 
+.experience-list {
+    text-align: center;
+    font-size: 1.05em;
+    padding-left: 0;  /* Remove left padding since we're centering */
+}
+
+.experience-legend {
+    text-align: center;
+    color: #B69B87 !important;  /* Darker orange-gray color */
+    font-size: 0.95em;
+    margin-top: 10px;
+}
+
 
