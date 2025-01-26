@@ -1,22 +1,22 @@
 ---
 layout: event
-title: Michael Lee visits UNAM (2016) - I learn about Bayesian Modeling!
+title: Meeting Michael D. Lee - First encounter with Bayesian modeling!
 date: 2016-06-21
 ---
 
 ### I meet Michael D. Lee on his second visit to UNAM.
 
-<a class='link' href="http://faculty.sites.uci.edu/mdlee/">Michael Lee's Webpage</a>
+I had the privilege of meeting <a class='link' href="http://faculty.sites.uci.edu/mdlee/">Michael D. Lee</a> during his second visit to UNAM. Little did I know at the time that he would later become one of my Ph.D. co-advisors at UC Irvine!
 
-Michael visited Lab25 for the second time in order to follow up on various collaborations, as well as to give talks to the members of Lab25 on:
+During his visit to Lab25, Michael gave two enlightening presentations that would significantly influence my research trajectory:
 
-* The benefits of Bayesian Modeling  (<a class='link' href="/presentations/Lee_BayesianBenefits.pdf">link to the presentation</a>)
+▸ An introduction to the benefits of Bayesian Modeling (<a class='link' href="/presentations/Lee_BayesianBenefits.pdf">View presentation</a>)
 
-* A general overview of Bayesian Modeling on Cognitive Science (<a class='link' href="/presentations/Lee_June2016.pdf">Check it out!</a>).
+▸ A comprehensive overview of Bayesian Modeling in Cognitive Science (<a class='link' href="/presentations/Lee_June2016.pdf">View presentation</a>)
 
-----
-![Alt text](/photos/IMG_5430.JPG)
+This visit marked my first formal exposure to Bayesian modeling, a framework that would later become central to my research work. Meeting Michael and learning about these methods sparked my interest in computational approaches to understanding cognitive processes.
 
-----
-![Alt text](/photos/IMG_5221.jpg)
+<div style="text-align: center">
+    <img src="/photos/IMG_5430.JPG" alt="Group photo with Michael Lee">
+</div>
 
