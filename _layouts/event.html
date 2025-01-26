@@ -32,7 +32,8 @@ layout: default
         <div class="event-content">
             <div class="event-header">
                 <div class="event-date">
-                    <span class="year">{{ page.date | date: "%Y" }}</span>{{ page.date | date: ", %b %d" }}
+                    {{ page.date | date: "%d" }}/{{ page.date | date: "%b" }}/
+                    <span class="year">{{ page.date | date: "%Y" }}</span>
                 </div>
             </div>
             <div class="event-body">
