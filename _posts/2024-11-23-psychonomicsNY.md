@@ -1,8 +1,8 @@
 ---
 layout: event
-title: Poster presentation at Psychonomics (New York, New York)
+title: Poster presentation at Psychonomics (Manhattan, New York)
 date: 2024-11-23
 ---
-### I presented my research at the Psychonomics conference in New York, New York.
+### I presented my research at the Psychonomics conference in Manhattan, New York.
 
 ### Travel award!
