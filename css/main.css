@@ -1044,6 +1044,21 @@ hr.style18:before {
     margin-top: 1.5em;    /* Adds space before each paragraph */
 }
 
+.event-body ul {
+    font-size: 1.3em;
+    font-family: 'Couries New', 'Courier', 'monospace';  /* Match paragraph font */
+    list-style-type: '▸';
+    padding-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.event-body ul li {
+    padding-left: 0.5em;
+    margin-bottom: 0.2em;
+    line-height: 1.6;
+    font-family: 'Couries New', 'Courier', 'monospace';  /* Added to ensure consistency */
+}
+
 /* Responsive design for events */
 @media screen and (max-width: 768px) {
     .event-container {
