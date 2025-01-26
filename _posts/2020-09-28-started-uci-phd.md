@@ -4,7 +4,7 @@ title: Started Grad School at UC Irvine
 date: 2020-09-28
 ---
 
-### A New Chapter Begins!
+### I moved to California to start my Ph.D. at UC Irvine!
 
 In Fall 2020, I began my Ph.D. journey at the University of California, Irvine! I joined the Department of Cognitive Sciences under the mentorship of an exceptional team of advisors:
 
