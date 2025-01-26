@@ -1005,10 +1005,10 @@ hr.style18:before {
 }
 
 .event-body {
-    font-size: 1.1em;
+    font-size: 0.9em;    /* Reduced from any larger value */
     line-height: 1.6;
     color: #333;
-    text-align: justify;  /* Justify the main content */
+    text-align: justify;
 }
 
 .event-body h3 {
