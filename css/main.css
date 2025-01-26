@@ -1330,4 +1330,18 @@ hr.style18:before {
     margin-top: 10px;
 }
 
+.event-body a {
+    color: #8b4513;  /* Matches your brown color scheme */
+    text-decoration: none;
+    font-size: 1.1em;  /* Matches paragraph text size */
+    background: linear-gradient(120deg, rgba(255, 255, 0, 0.4) 0%, rgba(255, 255, 0, 0.4) 100%);
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+.event-body a:hover {
+    color: #a0522d;  /* Slightly lighter brown on hover */
+    text-decoration: none;
+}
+
 
