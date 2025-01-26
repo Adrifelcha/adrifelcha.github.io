@@ -1005,8 +1005,8 @@ hr.style18:before {
 }
 
 .event-body {
-    font-size: 0.9em;    /* Reduced from any larger value */
-    line-height: 1.6;
+    font-size: 0.9em;
+    line-height: 1.4; 
     color: #333;
     text-align: justify;
 }
@@ -1033,6 +1033,15 @@ hr.style18:before {
     max-width: 100%;
     border-radius: 8px;
     margin: 20px 0;
+}
+
+.event-body p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 1.5em;  /* Adds space after each paragraph */
+    margin-top: 1.5em;    /* Adds space before each paragraph */
 }
 
 /* Responsive design for events */
