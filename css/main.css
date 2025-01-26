@@ -564,9 +564,10 @@ hr.style18:before {
 }
 
 .section-title {
-    color: #8b4513;
-    text-align: left;
-    font-size: 2em;
+    color: #a0522d;
+    text-align: center;
+    font-size: 2.3em;
+    text-transform: uppercase;
     margin-bottom: 20px;
     padding-bottom: 10px;
     background: linear-gradient(to right, 
