@@ -1,22 +1,31 @@
 ---
 layout: event
-title: Bachelor's thesis defense! (B.A. in Psychology)
+title: Bachelor's Thesis Defense
 date: 2018-03-13
 ---
 
 ### I defended my Bachelor's thesis!
 
-On March 13th, 2018, I obtained my B.A. in Psychology by defending my thesis "Studies on Signal Detection".
+On March 13th, 2018, I successfully defended my bachelor's thesis "Studies on Signal Detection" at the School of Psychology, UNAM. This marked the completion of my B.A. in Psychology with a GPA of 9.79/10.0, graduating with merits.
 
-____  
+### Research Committee
 
-![Alt text](/photos/Fel_Ex2.jpg)
+I was fortunate to have my work evaluated by an exceptional committee:
 
-The conmemorative picture of a not-anymore-undergrad Felisa, among with (from left to right) Dr. Germán Palafox (her advisor), Dr. Arturo Bouzas (her mentor), José Luis Baroja (another member of Lab25 and a huge inspiration for her ever since she entered the Lab! This is the first thesis he reviewes!), and Dr. Óscar Zamora (her revisor).
+- Dr. Arturo Bouzas (Advisor)
+- Dr. Germán Palafox (Reviewer)
+- Dr. Óscar Zamora (Reviewer)
+- B.A. José Luis Baroja (Reviewer)
 
-The conmemorative picture with Lab25!
+### Thesis Overview
 
-____  
+My research explored the generalizability of the Mirror Effect—a phenomenon well-documented in recognition memory—to the domain of visual perception. Using Signal Detection Theory and the Ebbinghaus illusion, we demonstrated how patterns typically observed in memory tasks could also emerge in pure perception tasks.
 
-![Alt text](/photos/Fel_Ex1.jpg)
+<div style="text-align: center">
+    <img src="/photos/Fel_Ex2.jpg" alt="Thesis Defense Committee">    
+</div>
+
+<div style="text-align: center">
+    <img src="/photos/Fel_Ex1.jpg" alt="Lab25 Celebration">    
+</div>
 

@@ -6,14 +6,17 @@ date: 2018-03-05
 
 ### Michael Lee visits Lab 25 (2018 Edition!)
 
-From his very first visit  Dr. Michael Lee has helped the members of Lab25 to get a better understanding of how Bayesian Cognitive Models can benefit Cognitive Sciences. On each visit, our projects and understanding on the subject have become more and more ambitious, and Michael has always been always in the best disposition to help us get further, showing us the best way to conduct our projects so we can do a better job at describing the phenomena we are interested in, by means of all kind of Bayesian methods.
+In March 2018, we had the pleasure of hosting Dr. Michael Lee for his third visit to Lab25. Having first met him in 2016, it was remarkable to see how my understanding of Bayesian cognitive modeling had evolved with each of his visits.
 
-Being his third visit to Lab25, Michael Lee knows most of the Lab25 crew: he knows what our main interests are and, as time has come by, he has seen us all grow and get better in the art of Bayesian Cognitive Modeling.
+### A Mentor's Impact
 
-This year, Michael visited Lab25 to catch up with some previoulsy established collaborations, and to begin new ones!
+Michael's influence on my academic journey has been profound. From our first meeting when I was an undergraduate student exploring Bayesian methods, to this visit where I was preparing for graduate school applications, his guidance has been invaluable. During this visit, I had the opportunity to discuss my research on the Mirror Effect and get his insights on applying hierarchical Bayesian models to my data.
 
-____  
+### Collaborative Spirit
 
-![Alt text](/LabPictures/MichaelLee_Visit2018.jpg)
+What makes Michael's visits special is his genuine enthusiasm for helping students develop their projects. His ability to suggest the most appropriate modeling approaches while encouraging us to push our analytical boundaries has been instrumental in shaping my approach to Bayesian modeling and statistical reasoning.
 
-Michael Lee is an incredible statistician, and a beloved friend of all Lab25! We all love the motivational burst he always leaves us with!
+
+<div style="text-align: center">
+    <img src="/photos/MichaelLee_Visit2018.jpg" alt="Michael Lee's Visit 2018">
+</div>
