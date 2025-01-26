@@ -12,15 +12,15 @@ Members of Lab25 and members of the UCI team had the chance to share their proje
 
 ____  
 
-![Alt text](/LabPictures/Lab25_UCI_1.png)
+![Alt text](/photos/Lab25_UCI_1.png)
 
 ____  
 
-![Alt text](/LabPictures/Lab25_UCI_2.png)
+![Alt text](/photos/Lab25_UCI_2.png)
 
 ____  
 
-![Alt text](/LabPictures/Lab25_UCI_3.png)
+![Alt text](/photos/Lab25_UCI_3.png)
 
 Dinner at Coyoacan Downtown!
 ____  
