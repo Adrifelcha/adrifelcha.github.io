@@ -1,7 +1,5 @@
-
-
 # Basic
-name:               "Lab25"
+name:               "Adriana F. Chavez De la Peña"
 markdown:           kramdown
 
 permalink: /blog/:year/:month/:day/:title
