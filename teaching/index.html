@@ -6,7 +6,15 @@ title: Teaching Materials
 <div class="publications-container">
     <div class="section-container">
         <h2 class="section-title">Teaching Materials</h2>
-        <div class="blog-list">
+        
+        <!-- Language selection buttons -->
+        <div class="language-buttons">
+            <button class="lang-btn" onclick="showLanguage('english')">English</button>
+            <button class="lang-btn" onclick="showLanguage('spanish')">Español</button>
+        </div>
+
+        <!-- English materials -->
+        <div id="english-materials" class="blog-list language-content">
             <div class="blog-item">
                 <div class="blog-content">
                     <div class="post-title">
@@ -23,5 +31,76 @@ title: Teaching Materials
                 </div>
             </div>
         </div>
+
+        <!-- Spanish materials -->
+        <div id="spanish-materials" class="blog-list language-content" style="display: none;">
+            <div class="blog-item">
+                <div class="blog-content">
+                    <div class="post-title">
+                        <a href="https://adrifelcha.shinyapps.io/TDS_2020/" class="blog-link" target="_blank">Teoría de Detección de Señales</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item">
+                <div class="blog-content">
+                    <div class="post-title">
+                        <a href="/teaching/probability-es.html" class="blog-link">Probabilidad e Inferencia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div> 
+</div>
+
+<script>
+function showLanguage(lang) {
+    // Hide all language content
+    document.querySelectorAll('.language-content').forEach(content => {
+        content.style.display = 'none';
+    });
+    
+    // Show selected language content
+    document.getElementById(lang + '-materials').style.display = 'block';
+    
+    // Update button styles
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+}
+
+// Show English by default
+document.addEventListener('DOMContentLoaded', function() {
+    showLanguage('english');
+});
+</script>
+
+<style>
+.language-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.lang-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #8B0000;
+    background-color: white;
+    color: #8B0000;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #8B0000;
+    color: white;
+}
+
+.lang-btn.active {
+    background-color: #8B0000;
+    color: white;
+}
+</style> 
