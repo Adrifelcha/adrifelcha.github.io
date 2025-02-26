@@ -27,3 +27,5 @@ This repository contains the source code for my personal academic website, where
 For any questions or suggestions about this website, please feel free to:
 - Email me at achavezd@uci.edu
 - Visit my [GitHub profile](https://github.com/Adrifelcha)
+
+bundle exec jekyll serve
