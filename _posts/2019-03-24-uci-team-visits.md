@@ -1,6 +1,6 @@
 ---
 layout: event
-title: Meeting Joachim Vandekerckhove, Holly Westfall, Alex Etz and Mac Strelioff
+title: UCI Bayesian team visits UNAM!
 date: 2019-03-24
 ---
 
