@@ -8,9 +8,16 @@ date: 2020-09-28
 
 In Fall 2020, I began my Ph.D. journey at the University of California, Irvine! I joined the Department of Cognitive Sciences under the mentorship of an exceptional team of advisors:
 
-- <a href="https://www.faculty.uci.edu/profile/?facultyId=6237" target="_blank">Joachim Vandekerckhove</a> (Primary Advisor)
-- <a href="https://www.faculty.uci.edu/profile/?facultyId=6493" target="_blank">Jeffrey N. Rouder</a>
+- <a href="https://www.faculty.uci.edu/profile/?facultyId=6237" target="_blank">Joachim Vandekerckhove</a> (Final Primary Advisor)
+- <a href="https://www.faculty.uci.edu/profile/?facultyId=6493" target="_blank">Jeffrey N. Rouder</a> (Initial Primary Advisor)
 - <a href="http://faculty.sites.uci.edu/mdlee/" target="_blank">Michael D. Lee</a> (Co-advisor)
+
+<div style="text-align: center;">
+    <img src="/photos/UCI.jpeg" alt="UCI Social and Behavioral Sciences Building" width="65%" />
+    <br>
+    *UCI Social and Behavioral Sciences Building*
+</div>
+
 
 ### Joint Program (M.S. in Statistics)
 
