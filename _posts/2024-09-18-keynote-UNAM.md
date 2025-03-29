@@ -25,6 +25,10 @@ The session featured two talks showcasing different applications of Bayesian mod
 
 You can watch my presentation here (starting at 1:13:31):
 
+<div style="text-align: center">
+    <iframe width="760" height="455" src="https://www.youtube.com/embed/xuCWxZdy8oc?start=4411" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Presenting at UNAM as an invited speaker was particularly meaningful, as it represented a full circle moment in my academic journey. From my undergraduate days at Lab25 to returning as a senior Ph.D. candidate from UC Irvine, this talk symbolized both personal growth and the enduring connection between these two institutions that have shaped my academic career.
 
 <div style="text-align: center;">
