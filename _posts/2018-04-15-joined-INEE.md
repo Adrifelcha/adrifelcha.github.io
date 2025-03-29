@@ -1,6 +1,6 @@
 ---
 layout: event
-title: Joined the National Institute for Education Evaluation
+title: Joined the National Institute for Education Evaluation (INEE)
 date: 2018-04-15
 ---
 
