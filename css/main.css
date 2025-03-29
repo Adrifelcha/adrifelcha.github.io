@@ -635,6 +635,24 @@ hr.style18:before {
     text-align: justify;
 }
 
+/* Citation Box Styling */
+.citation-box {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #666;
+    font-style: italic;
+    font-family: 'Couries New', 'Courier', 'monospace';
+    font-size: 1.1em;
+    line-height: 1.4;
+    color: #333;
+}
+
+.citation-box:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
 .pub-links {
     flex: 0 0 auto;
     white-space: nowrap;
