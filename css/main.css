@@ -445,6 +445,7 @@ hr.style18:before {
     list-style: none;
     margin-top: 0;
     box-sizing: border-box;
+    overflow: visible;
 }
 
 .mainnav li {
@@ -1046,36 +1047,81 @@ hr.style18:before {
     }
     
     .dropdown {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        width: 100%;
+        position: fixed;
+        opacity: 0;
+        visibility: hidden;
+        width: 200px;
+        max-width: calc(100vw - 20px);
         background: #333333 !important;
         display: block;
-        margin-top: 0;
-        border-radius: 0;
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        z-index: 1000;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
     }
     
     .hassubs .dropdown {
-        position: static;
+        position: absolute;
         display: block;
     }
     
-    .hassubs:hover .dropdown,
-    .hassubs:focus-within .dropdown {
-        display: block;
+    .hassubs.dropdown-active .dropdown {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+    
+    /* On mobile, dropdowns are controlled by JavaScript click events, not hover */
+    
+    .mainnav li.hassubs {
+        position: relative;
+        overflow: visible;
+    }
+    
+    .mainnav {
+        overflow: visible;
     }
     
     .mainnav li.hassubs > a {
         position: relative;
     }
     
+    .mainnav li.hassubs > a::after {
+        content: ' ▶';
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+    
+    .mainnav li.hassubs.dropdown-active > a::after {
+        content: ' ▼';
+    }
+    
     .subs {
         border-bottom: 2px solid #555555 !important;
+        display: block !important;
+        width: 100% !important;
     }
     
     .subs:last-child {
         border-bottom: none !important;
+    }
+    
+    .subs a {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px 16px !important;
+        color: #FFFFFF !important;
+    }
+    
+    /* Prevent dropdown from going off screen on small devices */
+    @media screen and (max-width: 480px) {
+        .dropdown {
+            width: calc(100vw - 20px);
+            max-width: 100%;
+            font-size: 0.9em;
+        }
     }
     
     .event-container {
