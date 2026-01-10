@@ -542,16 +542,33 @@ hr.style18:before {
     font-size: 0.9em;
     position: relative;
     width: 100%;    /* Match dropdown width */
-    border-bottom: 1px solid #555555 !important;
     display: block;
+    border-top: 1px solid #555555 !important;
+    border-bottom: 2px solid #555555 !important;
+    text-align: left !important;
+}
+
+/* Force border on first subs item - use more specific selector */
+.dropdown > .subs:first-child,
+ul.dropdown > li.subs:first-child {
+    border-top: 2px solid #555555 !important;
+    border-bottom: 2px solid #555555 !important;
+}
+
+/* Ensure first child has border - override base styles */
+.subs:first-child {
+    border-top: 2px solid #555555 !important;
+    border-bottom: 2px solid #555555 !important;
 }
 
 .subs a {
     width: 100%;    /* Make sure the link fills the space */
     padding: 12px 16px;
-    display: block;
+    display: block !important;
     color: #FFFFFF !important;
     text-decoration: none;
+    text-align: left !important;
+    justify-content: flex-start !important;
 }
 
 .subs:hover {
@@ -569,8 +586,26 @@ hr.style18:before {
 }
 
 .dropdown .subs a {
-    justify-content: flex-start;
-    text-align: left;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.subs a {
+    text-align: left !important;
+    display: block !important;
+}
+
+/* Override any centering from parent nav styles - must be very specific */
+.mainnav .dropdown .subs a,
+.mainnav .hassubs .dropdown .subs a,
+.mainnav li .dropdown .subs:first-child a,
+.dropdown .subs:first-child a,
+.dropdown .subs a {
+    text-align: left !important;
+    justify-content: flex-start !important;
+    display: block !important;
 }
 
 /* Remove extra breaks in the layout */
@@ -1088,24 +1123,45 @@ hr.style18:before {
         position: relative;
     }
     
-    .mainnav li.hassubs > a::after {
+    /* Only show arrow if dropdown actually exists */
+    .mainnav li.hassubs:has(.dropdown) > a::after {
         content: ' ▶';
         font-size: 0.8em;
         margin-left: 5px;
     }
     
-    .mainnav li.hassubs.dropdown-active > a::after {
+    .mainnav li.hassubs:has(.dropdown).dropdown-active > a::after {
+        content: ' ▼';
+    }
+    
+    /* Fallback for browsers that don't support :has() */
+    .mainnav li.hassubs.has-dropdown > a::after {
+        content: ' ▶';
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+    
+    .mainnav li.hassubs.has-dropdown.dropdown-active > a::after {
         content: ' ▼';
     }
     
     .subs {
-        border-bottom: 2px solid #555555 !important;
+        border-top: 1px solid #555555 !important;
+        border-bottom: 1px solid #555555 !important;
         display: block !important;
         width: 100% !important;
     }
     
+    .subs:first-child {
+        border-top: 2px solid #555555 !important;
+    }
+    
+    .subs:not(:last-child) {
+        border-bottom: 2px solid #555555 !important;
+    }
+    
     .subs:last-child {
-        border-bottom: none !important;
+        border-bottom: 2px solid #555555 !important;
     }
     
     .subs a {

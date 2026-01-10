@@ -78,12 +78,28 @@
 					}
 				}
 				
-				document.addEventListener('DOMContentLoaded', initMobileDropdowns);
+				// Mark items with actual dropdowns for CSS fallback
+				function markDropdownItems() {
+					document.querySelectorAll('.hassubs').forEach(function(item) {
+						const dropdown = item.querySelector('.dropdown');
+						if (dropdown) {
+							item.classList.add('has-dropdown');
+						} else {
+							item.classList.remove('has-dropdown');
+						}
+					});
+				}
+				
+				document.addEventListener('DOMContentLoaded', function() {
+					markDropdownItems();
+					initMobileDropdowns();
+				});
 				window.addEventListener('resize', function() {
 					// Reinitialize on resize
 					document.querySelectorAll('.hassubs').forEach(function(item) {
 						item.classList.remove('dropdown-active');
 					});
+					markDropdownItems();
 					initMobileDropdowns();
 				});
 			</script>
