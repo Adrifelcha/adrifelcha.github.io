@@ -1082,7 +1082,7 @@ ul.dropdown > li.subs:first-child {
     }
     
     .dropdown {
-        position: fixed;
+        position: absolute;
         opacity: 0;
         visibility: hidden;
         width: 200px;
@@ -1095,6 +1095,9 @@ ul.dropdown > li.subs:first-child {
         transition: opacity 0.2s ease, visibility 0.2s ease;
         max-height: calc(100vh - 100px);
         overflow-y: auto;
+        top: 100%;
+        left: 0;
+        margin-top: 2px;
     }
     
     .hassubs .dropdown {
@@ -1102,13 +1105,13 @@ ul.dropdown > li.subs:first-child {
         display: block;
     }
     
-    .hassubs.dropdown-active .dropdown {
+    /* Show dropdown on hover - works on both desktop and mobile (touch devices trigger hover on tap) */
+    .hassubs:hover .dropdown,
+    .hassubs:focus-within .dropdown {
         opacity: 1 !important;
         visibility: visible !important;
         display: block !important;
     }
-    
-    /* On mobile, dropdowns are controlled by JavaScript click events, not hover */
     
     .mainnav li.hassubs {
         position: relative;

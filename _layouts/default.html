@@ -11,74 +11,7 @@
 		
 			<!-- Navigation styles are now in main.css -->
 			<script>
-				// Mobile dropdown toggle
-				function initMobileDropdowns() {
-					const isMobile = window.innerWidth <= 768;
-					const menuItems = document.querySelectorAll('.hassubs > a');
-					
-					menuItems.forEach(function(item) {
-						// Remove existing listeners by cloning
-						const newItem = item.cloneNode(true);
-						item.parentNode.replaceChild(newItem, item);
-						
-						if (isMobile) {
-							newItem.addEventListener('click', function(e) {
-								const parent = this.parentElement;
-								const dropdown = parent.querySelector('.dropdown');
-								
-								if (dropdown) {
-									e.preventDefault();
-									e.stopPropagation();
-									
-									// Get position of the menu item
-									const rect = this.getBoundingClientRect();
-									
-									// Close all other dropdowns
-									document.querySelectorAll('.hassubs').forEach(function(otherItem) {
-										if (otherItem !== parent) {
-											otherItem.classList.remove('dropdown-active');
-										}
-									});
-									
-									// Toggle current dropdown
-									const isActive = parent.classList.toggle('dropdown-active');
-									
-									if (isActive && dropdown) {
-										// Position dropdown to the right side
-										const dropdownWidth = 200;
-										const rightEdge = rect.right + dropdownWidth;
-										const viewportWidth = window.innerWidth;
-										
-										if (rightEdge > viewportWidth) {
-											// If it would go off screen, position to the left instead
-											dropdown.style.left = 'auto';
-											dropdown.style.right = '10px';
-											dropdown.style.top = rect.top + 'px';
-										} else {
-											// Position to the right
-											dropdown.style.left = rect.right + 5 + 'px';
-											dropdown.style.right = 'auto';
-											dropdown.style.top = rect.top + 'px';
-										}
-									}
-								}
-							});
-						}
-					});
-					
-					// Close dropdowns when clicking outside (only on mobile)
-					if (isMobile) {
-						document.addEventListener('click', function(e) {
-							if (!e.target.closest('.hassubs') && !e.target.closest('.dropdown')) {
-								document.querySelectorAll('.hassubs').forEach(function(item) {
-									item.classList.remove('dropdown-active');
-								});
-							}
-						});
-					}
-				}
-				
-				// Mark items with actual dropdowns for CSS fallback
+				// Mark items with actual dropdowns for CSS arrow indicators
 				function markDropdownItems() {
 					document.querySelectorAll('.hassubs').forEach(function(item) {
 						const dropdown = item.querySelector('.dropdown');
@@ -90,18 +23,7 @@
 					});
 				}
 				
-				document.addEventListener('DOMContentLoaded', function() {
-					markDropdownItems();
-					initMobileDropdowns();
-				});
-				window.addEventListener('resize', function() {
-					// Reinitialize on resize
-					document.querySelectorAll('.hassubs').forEach(function(item) {
-						item.classList.remove('dropdown-active');
-					});
-					markDropdownItems();
-					initMobileDropdowns();
-				});
+				document.addEventListener('DOMContentLoaded', markDropdownItems);
 			</script>
 				</head>				
 		
