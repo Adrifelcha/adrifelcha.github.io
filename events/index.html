@@ -7,7 +7,22 @@ title: Events and academic life updates!
     <div class="section-container">
         <h2 class="section-title">Events & Updates!</h2>
         <div class="blog-list">
-            {% for post in site.posts %}
+            {% assign event_posts = site.posts | where: "category", "event" %}
+            {% if event_posts.size == 0 %}
+                {% assign event_posts = site.posts | where: "categories", "event" %}
+            {% endif %}
+            {% if event_posts.size == 0 %}
+                <!-- Show all posts EXCEPT those marked as blog (for backward compatibility with existing posts) -->
+                {% assign temp_posts = site.posts %}
+                {% assign event_posts = "" | split: "," %}
+                {% for post in temp_posts %}
+                    {% unless post.category == "blog" or post.categories == "blog" %}
+                        {% assign event_posts = event_posts | push: post %}
+                    {% endunless %}
+                {% endfor %}
+            {% endif %}
+            
+            {% for post in event_posts %}
             <a href="{{ post.url }}" class="blog-item-link">
                 <div class="blog-item">
                     <div class="blog-content">
@@ -23,6 +38,16 @@ title: Events and academic life updates!
                 </div>
             </a>
             {% endfor %}
+            
+            {% if event_posts.size == 0 %}
+            <div class="blog-item">
+                <div class="blog-content">
+                    <p style="text-align: center; color: #666; font-style: italic;">
+                        No events yet. Check back soon!
+                    </p>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
