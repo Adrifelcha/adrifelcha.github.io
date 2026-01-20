@@ -1,0 +1,50 @@
+---
+layout: default
+title: Thoughts and opinions
+---
+
+<div class="publications-container">
+    <div class="section-container">
+        <h2 class="section-title">Opinions & Thoughts</h2>
+        <div class="blog-list">
+            {% assign blog_posts = site.posts | where: "category", "blog" %}
+            {% if blog_posts.size == 0 %}
+                {% assign blog_posts = site.posts | where: "categories", "blog" %}
+            {% endif %}
+            {% if blog_posts.size == 0 %}
+                <!-- If no blog category, show all posts (you can filter manually later) -->
+                {% assign blog_posts = site.posts %}
+            {% endif %}
+            
+            {% for post in blog_posts %}
+            <a href="{{ post.url }}" class="blog-item-link">
+                <div class="blog-item">
+                    <div class="blog-content">
+                        <div class="blog-grid">
+                            <div class="post-date">
+                                <span class="year">{{ post.date | date: "%Y" }}</span>{{ post.date | date: ", %b %d" }}
+                            </div>
+                            <div class="post-title">
+                                <span class="blog-link">{{ post.title }}</span>
+                            </div>
+                        </div>
+                        {% if post.excerpt %}
+                        <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+            
+            {% if blog_posts.size == 0 %}
+            <div class="blog-item">
+                <div class="blog-content">
+                    <p style="text-align: center; color: #666; font-style: italic;">
+                        No blog posts yet. Check back soon!
+                    </p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
