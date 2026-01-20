@@ -11,10 +11,7 @@ title: Thoughts and opinions
             {% if blog_posts.size == 0 %}
                 {% assign blog_posts = site.posts | where: "categories", "blog" %}
             {% endif %}
-            {% if blog_posts.size == 0 %}
-                <!-- If no blog category, show all posts (you can filter manually later) -->
-                {% assign blog_posts = site.posts %}
-            {% endif %}
+            <!-- Only show posts explicitly marked as blog posts - no fallback to all posts -->
             
             {% for post in blog_posts %}
             <a href="{{ post.url }}" class="blog-item-link">
@@ -28,8 +25,23 @@ title: Thoughts and opinions
                                 <span class="blog-link">{{ post.title }}</span>
                             </div>
                         </div>
-                        {% if post.excerpt %}
-                        <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+                        {% comment %} Extract first header (###) from post content {% endcomment %}
+                        {% assign content_text = post.content | strip %}
+                        {% assign header_parts = content_text | split: '###' %}
+                        {% if header_parts.size > 1 %}
+                            {% assign after_header = header_parts[1] | strip %}
+                            {% assign header_with_br = after_header | newline_to_br %}
+                            {% assign header_array = header_with_br | split: '<br />' %}
+                            {% assign header_line = header_array[0] | strip | remove: '<br />' | remove: '<br>' %}
+                            {% if header_line != '' %}
+                                <div class="post-excerpt">
+                                    <strong>{{ header_line }}</strong>
+                                </div>
+                            {% elsif post.excerpt %}
+                                <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+                            {% endif %}
+                        {% elsif post.excerpt %}
+                            <div class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
                         {% endif %}
                     </div>
                 </div>
