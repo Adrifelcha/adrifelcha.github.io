@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="publications-container">
+    <div class="section-container">
+        <h2 class="section-title">Opinions & Thoughts</h2>
+        <div class="navigation-container">
+            {% assign blog_posts = site.posts | where: "category", "blog" %}
+            {% if blog_posts.size == 0 %}
+                {% assign blog_posts = site.posts | where: "categories", "blog" %}
+            {% endif %}
+            
+            {% assign prev_post = nil %}
+            {% assign next_post = nil %}
+            {% assign found_current = false %}
+            
+            {% for post in blog_posts %}
+                {% if found_current %}
+                    {% assign next_post = post %}
+                    {% break %}
+                {% endif %}
+                {% if post.url == page.url %}
+                    {% assign found_current = true %}
+                {% else %}
+                    {% assign prev_post = post %}
+                {% endif %}
+            {% endfor %}
+            
+            {% if prev_post %}
+            <a href="{{ prev_post.url }}" class="nav-arrow prev-arrow" title="{{ prev_post.title }}">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            {% else %}
+            <span class="nav-arrow disabled">
+                <i class="fa fa-chevron-left"></i>
+            </span>
+            {% endif %}
+
+            <a href="/blog/" class="back-link">
+                Blog list
+            </a>
+
+            {% if next_post %}
+            <a href="{{ next_post.url }}" class="nav-arrow next-arrow" title="{{ next_post.title }}">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+            {% else %}
+            <span class="nav-arrow disabled">
+                <i class="fa fa-chevron-right"></i>
+            </span>
+            {% endif %}
+        </div>
+        <div class="event-content">
+            <div class="event-header">
+                <div class="event-date">
+                    {{ page.date | date: "%d" }}/{{ page.date | date: "%b" }}/
+                    <span class="year">{{ page.date | date: "%Y" }}</span>
+                </div>
+            </div>
+            <div class="event-body">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
