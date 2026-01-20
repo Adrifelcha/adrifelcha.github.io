@@ -5,8 +5,39 @@ layout: default
     <div class="section-container">
         <h2 class="section-title">Events & Updates!</h2>
         <div class="navigation-container">
-            {% if page.previous.url %}
-            <a href="{{ page.previous.url }}" class="nav-arrow prev-arrow" title="{{ page.previous.title }}">
+            {% assign event_posts = site.posts | where: "category", "event" %}
+            {% if event_posts.size == 0 %}
+                {% assign event_posts = site.posts | where: "categories", "event" %}
+            {% endif %}
+            {% if event_posts.size == 0 %}
+                <!-- Show all posts EXCEPT those marked as blog (for backward compatibility) -->
+                {% assign temp_posts = site.posts %}
+                {% assign event_posts = "" | split: "," %}
+                {% for post in temp_posts %}
+                    {% unless post.category == "blog" or post.categories == "blog" %}
+                        {% assign event_posts = event_posts | push: post %}
+                    {% endunless %}
+                {% endfor %}
+            {% endif %}
+            
+            {% assign prev_post = nil %}
+            {% assign next_post = nil %}
+            {% assign found_current = false %}
+            
+            {% for post in event_posts %}
+                {% if found_current %}
+                    {% assign next_post = post %}
+                    {% break %}
+                {% endif %}
+                {% if post.url == page.url %}
+                    {% assign found_current = true %}
+                {% else %}
+                    {% assign prev_post = post %}
+                {% endif %}
+            {% endfor %}
+            
+            {% if prev_post %}
+            <a href="{{ prev_post.url }}" class="nav-arrow prev-arrow" title="{{ prev_post.title }}">
                 <i class="fa fa-chevron-left"></i>
             </a>
             {% else %}
@@ -19,8 +50,8 @@ layout: default
                 Event list
             </a>
 
-            {% if page.next.url %}
-            <a href="{{ page.next.url }}" class="nav-arrow next-arrow" title="{{ page.next.title }}">
+            {% if next_post %}
+            <a href="{{ next_post.url }}" class="nav-arrow next-arrow" title="{{ next_post.title }}">
                 <i class="fa fa-chevron-right"></i>
             </a>
             {% else %}
