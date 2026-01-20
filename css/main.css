@@ -796,23 +796,29 @@ ul.dropdown > li.subs:first-child {
 }
 
 .blog-item {
-    margin-bottom: 15px;
-    padding: 15px 25px;
+    margin-bottom: 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+}
+
+/* Blog item hover effects removed to keep list compact */
+
+.blog-content {
+    position: relative;
+}
+
+/* Blog listing items - box styling on inner content, not outer item */
+.blog-list .blog-content {
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #BF8B5E;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
-    transition: all 0.3s ease;
-}
-
-.blog-item-link:hover .blog-item {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(87, 49, 12, 0.15);
-    background: rgba(191, 139, 94, 0.2);  /* Increased opacity from 0.1 to 0.2 */
-}
-
-.blog-content {
-    position: relative;
+    padding: 15px 25px;
+    margin-bottom: 15px;
 }
 
 .blog-grid {
@@ -1742,6 +1748,86 @@ ul.dropdown > li.subs:first-child {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Blog Layout Styling */
+.blog-content {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #BF8B5E;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(87, 49, 12, 0.15);
+    position: relative;
+}
+
+.blog-date {
+    text-align: right;
+    color: #666;
+    font-size: 0.95em;
+    font-family: 'Courier New', 'Courier', 'monospace';
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: none;
+}
+
+.blog-date .year {
+    color: #8B0000;
+}
+
+.blog-body {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-top: 0;
+}
+
+.blog-body h3 {
+    color: #8b4513;
+    text-align: left;
+    margin: 25px 0 15px 0;
+    padding-bottom: 0;
+    position: relative;
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    border-bottom: none;
+}
+
+.blog-body h3::after {
+    display: none;
+}
+
+.blog-body p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    font-family: 'Courier New', 'Courier', 'monospace';
+}
+
+/* Responsive design for blog layout */
+@media screen and (max-width: 768px) {
+    .blog-content {
+        padding: 20px;
+    }
+    
+    .blog-date {
+        text-align: right;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-content {
+        padding: 15px;
+    }
+    
+    .blog-body p {
+        font-size: 1em;
+    }
 }
 
 
