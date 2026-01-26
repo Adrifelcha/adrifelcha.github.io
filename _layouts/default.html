@@ -55,8 +55,14 @@
 						
 						if (translations[lang] && translations[lang][section] && translations[lang][section][key]) {
 							const text = translations[lang][section][key];
-							// Handle <br> tags in navigation
-							if (element.innerHTML.includes('<br>')) {
+							// Check if text contains HTML (like icons or <br> tags)
+							const hasHTML = text.includes('<') && text.includes('>');
+							
+							if (hasHTML) {
+								// Use innerHTML to preserve HTML content (icons, <br> tags, etc.)
+								element.innerHTML = text;
+							} else if (element.innerHTML.includes('<br>')) {
+								// Handle <br> tags in navigation - split text across lines
 								const parts = text.split(' ');
 								if (parts.length > 2) {
 									element.innerHTML = parts.slice(0, Math.ceil(parts.length/2)).join(' ') + '<br>' + parts.slice(Math.ceil(parts.length/2)).join(' ');
@@ -64,6 +70,7 @@
 									element.innerHTML = text.replace(' ', '<br>');
 								}
 							} else {
+								// Simple text replacement
 								element.textContent = text;
 							}
 						}
@@ -132,9 +139,9 @@
 <h1 class="name-title">Adriana F. Chávez De la Peña</h1> 
 	
 <ul class="mainnav" data-translate="nav">
-  <li><a href="/" data-translate-key="home"><i class="fa fa-home"></i></a></li>
+  <li><a href="/" data-translate-key="home">Home</a></li>
   <li class="hassubs">
-    <a href="/publications/" data-translate-key="publications">Publications<br>& Presentations</a>
+    <a href="/publications/" data-translate-key="publications">Publications and Presentations</a>
     <ul class="dropdown">
       <li class="subs"><a href="/publications/index.html#Papers" data-translate-key="papers">Papers</a></li>
       <li class="subs"><a href="/publications/index.html#Conferences" data-translate-key="talks">Talks</a></li>
