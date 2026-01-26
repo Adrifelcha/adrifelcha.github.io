@@ -11,8 +11,103 @@
 		
 			<!-- Navigation styles are now in main.css -->
 			<script>
-				// Mark items with actual dropdowns for CSS arrow indicators
-				function markDropdownItems() {
+				// Language switching functionality
+				// Translations are loaded from _data/translations.yml via Jekyll/Liquid
+				const translations = {{ site.data.translations | jsonify }};
+
+				// Get current language from localStorage or default to 'en' (English)
+				function getCurrentLang() {
+					const saved = localStorage.getItem('preferred-language');
+					// Default to English if nothing is saved
+					if (!saved) {
+						localStorage.setItem('preferred-language', 'en');
+						return 'en';
+					}
+					return saved;
+				}
+
+				// Set language preference
+				function setLanguage(lang) {
+					localStorage.setItem('preferred-language', lang);
+					applyLanguage(lang);
+				}
+
+				// Apply language to page
+				function applyLanguage(lang) {
+					// Ensure lang is valid, default to 'en'
+					if (lang !== 'en' && lang !== 'es') {
+						lang = 'en';
+					}
+					
+					// Update active tab
+					document.querySelectorAll('.lang-tab').forEach(tab => {
+						if (tab.dataset.lang === lang) {
+							tab.classList.add('active');
+						} else {
+							tab.classList.remove('active');
+						}
+					});
+
+					// Update navigation
+					document.querySelectorAll('[data-translate-key]').forEach(element => {
+						const key = element.getAttribute('data-translate-key');
+						const section = element.closest('[data-translate]')?.getAttribute('data-translate') || 'nav';
+						
+						if (translations[lang] && translations[lang][section] && translations[lang][section][key]) {
+							const text = translations[lang][section][key];
+							// Handle <br> tags in navigation
+							if (element.innerHTML.includes('<br>')) {
+								const parts = text.split(' ');
+								if (parts.length > 2) {
+									element.innerHTML = parts.slice(0, Math.ceil(parts.length/2)).join(' ') + '<br>' + parts.slice(Math.ceil(parts.length/2)).join(' ');
+								} else {
+									element.innerHTML = text.replace(' ', '<br>');
+								}
+							} else {
+								element.textContent = text;
+							}
+						}
+					});
+
+					// Update page content if it has data-translate attributes
+					document.querySelectorAll('[data-translate-content]').forEach(element => {
+						const key = element.getAttribute('data-translate-content');
+						const section = element.getAttribute('data-translate-section') || 'home';
+						
+						if (translations[lang] && translations[lang][section] && translations[lang][section][key]) {
+							const text = translations[lang][section][key];
+							// Simple text replacement - if element is a span inside an h2 with icons, preserve parent structure
+							const parent = element.parentElement;
+							if (parent && parent.tagName === 'H2' && parent.querySelectorAll('i').length > 0) {
+								// Parent has icons, just update the span text
+								element.textContent = text;
+							} else {
+								// Simple text replacement
+								element.textContent = text;
+							}
+						}
+					});
+				}
+
+				// Initialize language on page load
+				document.addEventListener('DOMContentLoaded', function() {
+					// Always default to English if no preference is set
+					let currentLang = localStorage.getItem('preferred-language');
+					if (!currentLang || (currentLang !== 'en' && currentLang !== 'es')) {
+						currentLang = 'en';
+						localStorage.setItem('preferred-language', 'en');
+					}
+					applyLanguage(currentLang);
+
+					// Set up language switcher buttons
+					document.querySelectorAll('.lang-tab').forEach(tab => {
+						tab.addEventListener('click', function() {
+							const lang = this.dataset.lang;
+							setLanguage(lang);
+						});
+					});
+
+					// Mark items with actual dropdowns for CSS arrow indicators
 					document.querySelectorAll('.hassubs').forEach(function(item) {
 						const dropdown = item.querySelector('.dropdown');
 						if (dropdown) {
@@ -21,44 +116,46 @@
 							item.classList.remove('has-dropdown');
 						}
 					});
-				}
-				
-				document.addEventListener('DOMContentLoaded', markDropdownItems);
+				});
 			</script>
 				</head>				
 		
 		<body>
+<div class="language-switcher">
+	<button class="lang-tab" id="lang-es" data-lang="es">Español</button>
+	<button class="lang-tab active" id="lang-en" data-lang="en">English</button>
+</div>
 <h1 class="name-title">Adriana F. Chávez De la Peña</h1> 
 	
-<ul class="mainnav">
-  <li><a href="/"><i class="fa fa-home"></i></a></li>
+<ul class="mainnav" data-translate="nav">
+  <li><a href="/" data-translate-key="home"><i class="fa fa-home"></i></a></li>
   <li class="hassubs">
-    <a href="/publications/">Publications<br>& Presentations</a>
+    <a href="/publications/" data-translate-key="publications">Publications<br>& Presentations</a>
     <ul class="dropdown">
-      <li class="subs"><a href="/publications/index.html#Papers">Papers</a></li>
-      <li class="subs"><a href="/publications/index.html#Conferences">Talks</a></li>
-      <li class="subs"><a href="/publications/index.html#Posters">Posters</a></li>
+      <li class="subs"><a href="/publications/index.html#Papers" data-translate-key="papers">Papers</a></li>
+      <li class="subs"><a href="/publications/index.html#Conferences" data-translate-key="talks">Talks</a></li>
+      <li class="subs"><a href="/publications/index.html#Posters" data-translate-key="posters">Posters</a></li>
     </ul>
   </li>
   <li class="hassubs">
-    <a href="/projects/">Research<br>Projects</a>
+    <a href="/projects/" data-translate-key="projects">Research<br>Projects</a>
     <!--<ul class="dropdown">
       <li class="subs"><a href="/projects/cddm.md">CDDM</a></li>
       <li class="subs"><a href="/projects/ezbhdm.html">EZBHDDM</a></li>
     </ul>-->
   </li>
   <li class="hassubs">
-    <a href="/teaching/">Teaching<br>Materials</a>
+    <a href="/teaching/" data-translate-key="teaching">Teaching<br>Materials</a>
     <!--<ul class="dropdown">
       <li class="subs"><a href="/teaching/sdt.html">Signal Detection Theory</a></li>
       <li class="subs"><a href="/teaching/probability.html">Probability & Inference</a></li>
     </ul>-->
   </li>
   <li class="hassubs">
-    <a href="/events/">Adri's Blog</a>
+    <a href="/events/" data-translate-key="blog">Adri's Blog</a>
     <ul class="dropdown">
-      <li class="subs"><a href="/events/">Events & Updates!</a></li>
-	  <li class="subs"><a href="/blog/">Opinions & thoughts :O</a></li>
+      <li class="subs"><a href="/events/" data-translate-key="events">Events & Updates!</a></li>
+	  <li class="subs"><a href="/blog/" data-translate-key="thoughts">Opinions & thoughts :O</a></li>
     </ul>
   </li>
 </ul>
