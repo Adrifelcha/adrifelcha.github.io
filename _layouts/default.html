@@ -73,6 +73,7 @@
 					document.querySelectorAll('[data-translate-content]').forEach(element => {
 						const key = element.getAttribute('data-translate-content');
 						const section = element.getAttribute('data-translate-section') || 'home';
+						const allowHTML = element.hasAttribute('data-translate-html');
 						
 						if (translations[lang] && translations[lang][section] && translations[lang][section][key]) {
 							const text = translations[lang][section][key];
@@ -81,6 +82,9 @@
 							if (parent && parent.tagName === 'H2' && parent.querySelectorAll('i').length > 0) {
 								// Parent has icons, just update the span text
 								element.textContent = text;
+							} else if (allowHTML) {
+								// Allow HTML content (for <br> tags, spans, etc.)
+								element.innerHTML = text;
 							} else {
 								// Simple text replacement
 								element.textContent = text;
