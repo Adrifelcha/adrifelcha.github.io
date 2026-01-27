@@ -6,22 +6,139 @@ title: Research Projects
 <div class="publications-container">
     <div class="section-container">
         <h2 class="section-title">Research Projects</h2>
-        <div class="blog-list">
-            <div class="blog-item">
+        
+        <!-- Keyword Filter Buttons -->
+        <div class="keyword-filters">
+            <button class="keyword-btn active" data-keyword="all">All</button>
+            <button class="keyword-btn" data-keyword="cddm">CDDM</button>            
+            <button class="keyword-btn" data-keyword="ezbhdm">EZBHDDM</button>
+            <button class="keyword-btn" data-keyword="software">Software Development</button>
+            <button class="keyword-btn" data-keyword="modeling">Cognitive Modeling</button>
+            <button class="keyword-btn" data-keyword="psychometrics">Cognitive Psychometrics</button>
+        </div>
+
+        <!-- Keyword Definitions -->
+        <div class="keyword-definitions">
+            <div class="definition-item" data-keyword="cddm">
+                <a href="/projects/definitions/cddm.html" class="definition-link">
+                    <div class="blog-content definition-content">
+                        <div class="definition-title"><i class="fa fa-hand-o-right"></i> INTRO: What is the Circular Drift Diffusion Model (CDDM)?</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="definition-item" data-keyword="ezbhdm">
+                <a href="/projects/definitions/ezbhdm.html" class="definition-link">
+                    <div class="blog-content definition-content">
+                        <div class="definition-title"><i class="fa fa-hand-o-right"></i> INTRO: What is the EZ-DDM and how does it relate to the Drift Diffusion Model (DDM)?</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="definition-item" data-keyword="psychometrics">
+                <a href="/projects/definitions/psychometrics.html" class="definition-link">
+                    <div class="blog-content definition-content">
+                        <div class="definition-title"><i class="fa fa-hand-o-right"></i> INTRO: What is Cognitive Psychometrics?</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Projects List -->
+        <div class="blog-list" id="projects-list">
+            <div class="blog-item project-item" data-keywords="cddm modeling psychometrics">
                 <div class="blog-content">
-                    <div class="post-title">
-                        <a href="/projects/cddm.md" class="blog-link">CDDM</a>
+                    <div class="post-title">CDDM</div>
+                    <div class="project-summary">A cognitive modeling project focusing on drift-diffusion models for decision-making and response time data analysis.</div>
+                    <div class="project-read-more-container">
+                        <a href="/projects/cddm/" class="project-read-more-btn">Read more!</a>
+                    </div>
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <a href="https://github.com/Adrifelcha/cddm" class="project-icon-link" target="_blank" title="GitHub Repository">
+                                <i class="fa fa-github"></i> GitHub Repo
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="https://example.com/paper" class="project-icon-link" target="_blank" title="Paper">
+                                <i class="fa fa-file-text-o"></i> See paper
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="blog-item">
+            <div class="blog-item project-item" data-keywords="ezbhdm modeling software">
                 <div class="blog-content">
-                    <div class="post-title">
-                        <a href="/projects/ezbhdm.html" class="blog-link">EZBHDDM</a>
+                    <div class="post-title">EZBHDDM</div>
+                    <div class="project-summary">Software development project for Bayesian hierarchical drift-diffusion models with efficient sampling methods.</div>
+                    <!-- "Read more!" button can be removed if not needed -->
+                    <!-- <div class="project-read-more-container">
+                        <a href="/projects/ezbhdm.html" class="project-read-more-btn">Read more!</a>
+                    </div> -->
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <a href="https://github.com/Adrifelcha/ezbhdm" class="project-icon-link" target="_blank" title="GitHub Repository">
+                                <i class="fa fa-github"></i> GitHub Repo
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="https://example.com/paper" class="project-icon-link" target="_blank" title="Paper">
+                                <i class="fa fa-file-text-o"></i> See paper
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> 
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const keywordButtons = document.querySelectorAll('.keyword-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+    const definitionItems = document.querySelectorAll('.definition-item');
+    
+    // Hide all definition boxes by default on page load
+    definitionItems.forEach(item => {
+        item.style.display = 'none';
+    });
+    
+    keywordButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const keyword = this.getAttribute('data-keyword');
+            
+            // Update active button
+            keywordButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter definitions - hide all when "all" is selected
+            definitionItems.forEach(item => {
+                if (keyword === 'all') {
+                    item.style.display = 'none';
+                } else {
+                    const itemKeyword = item.getAttribute('data-keyword');
+                    if (itemKeyword === keyword) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+            
+            // Filter projects
+            projectItems.forEach(item => {
+                if (keyword === 'all') {
+                    item.style.display = '';
+                } else {
+                    const keywords = item.getAttribute('data-keywords').split(' ');
+                    if (keywords.includes(keyword)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+</script> 

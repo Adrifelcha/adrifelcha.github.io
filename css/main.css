@@ -813,12 +813,202 @@ ul.dropdown > li.subs:first-child {
 
 /* Blog listing items - box styling on inner content, not outer item */
 .blog-list .blog-content {
+    position: relative; /* For absolute positioning of project-links */
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #BF8B5E;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
     padding: 15px 25px;
     margin-bottom: 15px;
+}
+
+/* Keyword Filter Buttons */
+.keyword-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.keyword-btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #BF8B5E;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: 'Courier New', 'Courier', monospace;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
+}
+
+.keyword-btn:hover {
+    background-color: #BF8B5E;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(87, 49, 12, 0.2);
+}
+
+.keyword-btn.active {
+    background-color: #8b4513;
+    color: white;
+    border-color: #8b4513;
+    font-weight: bold;
+}
+
+/* Keyword Definitions */
+.keyword-definitions {
+    margin-bottom: 30px;
+}
+
+.definition-item {
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: none; /* Hide by default, JavaScript will show when needed */
+}
+
+.definition-item:hover {
+    transform: translateY(-2px);
+}
+
+.definition-item:hover .definition-content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.definition-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.definition-link:hover {
+    text-decoration: none;
+}
+
+/* Definition content with solid background */
+.definition-item .definition-content {
+    background-color: #8B4513 !important;
+    border: 2px solid #6B3410;
+    color: white;
+    padding: 0;
+}
+
+.definition-item .definition-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Georgia', serif;
+    text-align: left;
+    padding: 15px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.definition-item .definition-title i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* Project Items */
+.project-item {
+    transition: box-shadow 0.2s ease;
+}
+
+.project-item:hover .blog-content {
+    box-shadow: 0 4px 8px rgba(87, 49, 12, 0.2);
+}
+
+/* Project-specific summary - only for Projects page */
+.project-item .project-summary {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'Courier New', 'Courier', monospace;
+    color: #000;
+    line-height: 1.5em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Project Links Container - Bottom Section */
+.project-links-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #BF8B5E;
+}
+
+/* Read More Button Container - Centered, Above Horizontal Rule */
+.project-read-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Read More Button - Centered, Narrow */
+.project-read-more-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #FFF9E6;
+    color: #8b4513;
+    font-size: 1.2em;
+    font-family: 'Courier New', 'Courier', monospace;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 2px solid #BF8B5E;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
+}
+
+.project-read-more-btn:hover {
+    background-color: #FFE5B4;
+    border-color: #8b4513;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(87, 49, 12, 0.2);
+    text-decoration: none;
+    color: #8b4513;
+}
+
+/* External Links - Bottom Right Corner */
+.project-external-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 1em;
+    font-family: 'Courier New', 'Courier', monospace;
+}
+
+.project-icon-link {
+    color: #8b4513;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-icon-link i {
+    font-size: 1em;
+}
+
+.project-icon-link:hover {
+    color: #BF8B5E;
+    text-decoration: underline;
+}
+
+.link-separator {
+    color: #BF8B5E;
+    margin: 0 5px;
 }
 
 .blog-grid {
@@ -845,6 +1035,15 @@ ul.dropdown > li.subs:first-child {
 
 .post-title {
     padding-left: 0;
+}
+
+/* Project Title Styling - only for Projects page */
+.project-item .blog-content .post-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #8b4513;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
 }
 
 .blog-link {
@@ -1887,6 +2086,54 @@ ul.dropdown > li.subs:first-child {
     .blog-date {
         text-align: right;
         margin-bottom: 15px;
+    }
+
+    /* Keyword Filter Buttons - Mobile */
+    .keyword-filters {
+        padding: 15px 10px;
+        gap: 8px;
+    }
+
+    .keyword-btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        flex: 1 1 auto;
+        min-width: calc(50% - 4px);
+    }
+
+    /* Project Links - Mobile */
+    .project-links-bottom {
+        gap: 12px;
+        margin-top: 15px;
+        padding-top: 12px;
+    }
+
+    .project-read-more-container {
+        margin-bottom: 8px;
+    }
+
+    .project-read-more-btn {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    .project-external-links {
+        font-size: 0.9em;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-icon-link {
+        font-size: 0.9em;
+    }
+
+    .project-icon-link i {
+        font-size: 0.9em;
+    }
+
+    .link-separator {
+        margin: 0 3px;
     }
 }
 
