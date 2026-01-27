@@ -30,9 +30,10 @@
 				function setLanguage(lang) {
 					localStorage.setItem('preferred-language', lang);
 					
-					// Check if we're on a publications page and need to redirect
+					// Check if we're on a publications or projects page and need to redirect
 					const currentPath = window.location.pathname;
 					const isPublicationsPage = currentPath.startsWith('/publications');
+					const isProjectsPage = currentPath.startsWith('/projects');
 					
 					if (isPublicationsPage) {
 						// Redirect to the appropriate language version
@@ -43,6 +44,17 @@
 						} else if (lang === 'en' && currentPath.startsWith('/publications_es/')) {
 							// Redirect from Spanish to English publications
 							window.location.href = currentPath.replace('/publications_es/', '/publications/');
+							return; // Exit early, page will reload
+						}
+					} else if (isProjectsPage) {
+						// Redirect to the appropriate language version
+						if (lang === 'es' && currentPath.startsWith('/projects/') && !currentPath.startsWith('/projects_es/')) {
+							// Redirect from English to Spanish projects
+							window.location.href = currentPath.replace('/projects/', '/projects_es/');
+							return; // Exit early, page will reload
+						} else if (lang === 'en' && currentPath.startsWith('/projects_es/')) {
+							// Redirect from Spanish to English projects
+							window.location.href = currentPath.replace('/projects_es/', '/projects/');
 							return; // Exit early, page will reload
 						}
 					}
@@ -176,7 +188,7 @@
     </ul>
   </li>
   <li class="hassubs">
-    <a href="/projects/" data-translate-key="projects">Research<br>Projects</a>
+    <a href="/projects/" data-translate-key="projects" data-href-en="/projects/" data-href-es="/projects_es/">Research<br>Projects</a>
     <!--<ul class="dropdown">
       <li class="subs"><a href="/projects/cddm.md">CDDM</a></li>
       <li class="subs"><a href="/projects/ezbhdm.html">EZBHDDM</a></li>

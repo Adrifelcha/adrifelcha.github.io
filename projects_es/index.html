@@ -1,0 +1,247 @@
+---
+layout: default
+title: Proyectos de Investigación
+---
+
+<div class="publications-container">
+    <div class="section-container">
+        <h2 class="section-title">Proyectos de Investigación</h2>
+        
+        <!-- Keyword Filter Buttons -->
+        <div class="keyword-filters">
+            <button class="keyword-btn active" data-keyword="all">Todos</button>
+            <button class="keyword-btn" data-keyword="cddm">CDDM</button>            
+            <button class="keyword-btn" data-keyword="ezbhdm">EZBHDDM</button>
+            <button class="keyword-btn" data-keyword="software">Desarrollo de Software</button>
+            <button class="keyword-btn" data-keyword="computational">Métodos Computacionales</button>            
+            <button class="keyword-btn" data-keyword="modeling">Modelamiento Cognitivo</button>
+            <button class="keyword-btn" data-keyword="psychometrics">Psicometría Cognitiva</button>
+            <button class="keyword-btn" data-keyword="statistics">Métodos Estadísticos</button>
+        </div>
+
+        <!-- Keyword Definitions -->
+        <div class="keyword-definitions">
+            <div class="definition-item" data-keyword="cddm">
+                <a href="/projects/definitions/cddm.html" class="definition-link">
+                    <div class="blog-content definition-content">
+                        <div class="definition-title"><i class="fa fa-hand-o-right"></i> INTRO: ¿Qué es el Modelo de Difusión Circular (CDDM)?</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="definition-item" data-keyword="ezbhdm">
+                <a href="/projects/definitions/ezbhdm.html" class="definition-link">
+                    <div class="blog-content definition-content">
+                        <div class="definition-title"><i class="fa fa-hand-o-right"></i> INTRO: ¿Qué es el EZ-DDM y cómo se relaciona con el Modelo de Difusión (DDM)?</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="definition-item" data-keyword="psychometrics">
+                <a href="/projects/definitions/psychometrics.html" class="definition-link">
+                    <div class="blog-content definition-content">
+                        <div class="definition-title"><i class="fa fa-hand-o-right"></i> INTRO: ¿Qué es la Psicometría Cognitiva?</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Projects List -->
+        <div class="blog-list" id="projects-list">
+            <div class="blog-item project-item" data-keywords="cddm software modeling computational psychometrics">
+                <div class="blog-content">
+                    <div class="post-title">Un módulo personalizado de JAGS para la implementación Bayesiana del CDDM</div>
+                    <div class="project-summary">Desarrollamos <b>software abierto</b> (un módulo para el lenguaje de programación probabilística JAGS) para la <b>implementación Bayesiana del CDDM</b>. Este trabajo fue publicado en <i>Computational Brain & Behavior</i>, en un artículo donde:
+                    <ul>
+                        <li>Presentamos nuestro módulo de JAGS con instrucciones sobre dónde y cómo instalarlo</li>
+                        <li>Validamos nuestra implementación a través de un <b>estudio de simulación de recuperación de parámetros</b></li>
+                        <li>Mostramos los beneficios de trabajar con el CDDM bajo un marco Bayesiano a través de una <b>aplicación muestra</b> usando datos libres.</li>
+                    </ul></div>
+                    <!-- <div class="project-read-more-container">
+                        <a href="/projects/cddm/" class="project-read-more-btn">¡Leer más!</a>
+                    </div> -->
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <a href="https://github.com/joachimvandekerckhove/jags-cddm" class="project-icon-link" target="_blank" title="Obtener el CDDM">
+                                <i class="fa fa-github"></i> Módulo JAGS CDDM
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="https://github.com/Adrifelcha/cddm-sampleFiles" class="project-icon-link" target="_blank" title="Estudio de recuperación de parámetros">
+                                <i class="fa fa-github"></i> Repo: Estudio de recuperación de parámetros
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="https://link.springer.com/article/10.1007/s42113-023-00191-4" class="project-icon-link" target="_blank" title="Artículo">
+                                <i class="fa fa-file-text-o"></i> Leer artículo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item project-item" data-keywords="cddm software computational">
+                <div class="blog-content">
+                    <div class="post-title">Una comparación de algoritmos de muestreo para el CDDM</div>
+                    <div class="project-summary">Desarrollé y comparé el rendimiento de diferentes algoritmos de muestreo para generar datos de elección y tiempo de respuesta del CDDM en términos de su precisión y eficiencia computacional. El mejor algoritmo pronto será implementado como parte de nuestro módulo personalizado de JAGS para la implementación Bayesiana del CDDM.</div>
+                    <!-- <div class="project-read-more-container">
+                        <a href="/projects/cddm/" class="project-read-more-btn" >¡Leer más!</a>
+                    </div> -->
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <a href="https://github.com/Adrifelcha/cddm-simulationMethods" class="project-icon-link" target="_blank" title="Repositorio GitHub">
+                                <i class="fa fa-github"></i> Repositorio GitHub
+                            </a>
+                            <!-- <span class="link-separator">|</span> 
+                            <a href="https://link.springer.com/article/10.1007/s42113-023-00191-4" class="project-icon-link" target="_blank" title="Artículo">
+                                <i class="fa fa-file-text-o"></i> Ver artículo completo
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item project-item" data-keywords="ezbhdm psychometrics statistics">
+                <div class="blog-content">
+                    <div class="post-title">Un modelo Bayesiano jerárquico de difusión EZ para tiempo de respuesta y precisión</div>
+                    <div class="project-summary">Desarrollamos un modelo Bayesiano jerárquico de difusión (DDM) con métodos de muestreo eficientes que puede ser implementado en cualquier lenguaje de programación probabilística. Nuestro modelo usa distribuciones binomiales y normales para modelar las distribuciones muestrales de estadísticas resumen clave del EZ-DDM, permitiendo extensiones versátiles a modelos jerárquicos con estructuras de variables latentes y metarregresión.</div>
+                    <!-- "Read more!" button can be removed if not needed -->
+                    <div class="project-read-more-container">
+                        <a href="/projects/brightness-demo-report.html" class="project-read-more-btn" target="_blank">¡Revisa la Aplicación de Ejemplo 1!</a>
+                    </div>
+                    <div class="project-read-more-container">
+                        <a href="/projects/shape-demo-report.html" class="project-read-more-btn" target="_blank">¡Revisa la Aplicación de Ejemplo 2!</a>
+                    </div>
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <a href="https://github.com/Adrifelcha/EZ-project" class="project-icon-link" target="_blank" title="Repositorio GitHub">
+                                <i class="fa fa-github"></i> Repositorio GitHub
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="https://link.springer.com/article/10.3758/s13423-025-02729-y" class="project-icon-link" target="_blank" title="Artículo">
+                                <i class="fa fa-file-text-o"></i> Ver artículo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item project-item" data-keywords="ezbhdm psychometrics statistics">
+                <div class="blog-content">
+                    <div class="post-title">Prueba de hipótesis Bayesiana robusta con el EZ-DDM jerárquico</div>
+                    <div class="project-summary">Desarrollamos un modelo Bayesiano jerárquico de difusión (DDM) con métodos de muestreo eficientes que puede ser implementado en cualquier lenguaje de programación probabilística. Nuestro modelo usa distribuciones binomiales y normales para modelar las distribuciones muestrales de estadísticas resumen clave del EZ-DDM, permitiendo extensiones versátiles a modelos jerárquicos con estructuras de variables latentes y metarregresión.</div>
+                    <!-- "Read more!" button can be removed if not needed -->
+                    <!-- <div class="project-read-more-container">
+                        <a href="/projects/ezbhdm.html" class="project-read-more-btn">¡Leer más!</a>
+                    </div> -->
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <a href="https://github.com/Adrifelcha/ez-robust" class="project-icon-link" target="_blank" title="Repositorio GitHub">
+                                <i class="fa fa-github"></i> Repositorio GitHub
+                            </a>
+                            <span class="link-separator">|</span>
+                            <a href="https://osf.io/preprints/psyarxiv/7gcyw" class="project-icon-link" target="_blank" title="Preimpresión">
+                                <i class="fa fa-file-text-o"></i> Ver preimpresión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item project-item" data-keywords="statistics">
+                <div class="blog-content">
+                    <div class="post-title">La regla de decisión HDI+ROPE es lógicamente incoherente pero podemos arreglarla.</div>
+                    <div class="project-summary">Mostramos que la regla de decisión Bayesiana HDI + ROPE es lógicamente incoherente: porque los HDIs no son invariantes a transformaciones, la decisión de aceptar/rechazar cambia con reparametrizaciones arbitrarias del modelo. El error viene de tratar la densidad de probabilidad como probabilidad. Ilustramos el fallo con teoría y ejemplos, recomendamos procedimientos alternativos de prueba Bayesiana, y ofrecemos una solución simple basada en intervalos de cuantiles.</div>
+                    <!-- "Read more!" button can be removed if not needed -->
+                    <!-- <div class="project-read-more-container">
+                        <a href="/projects/ezbhdm.html" class="project-read-more-btn">¡Leer más!</a>
+                    </div> -->
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <!--<a href="https://github.com/Adrifelcha/EZ-project" class="project-icon-link" target="_blank" title="Repositorio GitHub">
+                                <i class="fa fa-github"></i> Repositorio GitHub
+                            </a> -->
+                            <!--<span class="link-separator">|</span>-->
+                            <a href="https://psycnet.apa.org/record/2024-85938-001" class="project-icon-link" target="_blank" title="Artículo">
+                                <i class="fa fa-file-text-o"></i> Ver artículo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-item project-item" data-keywords="statistics">
+                <div class="blog-content">
+                    <div class="post-title">Sobre la fusión de Cronbach: Por qué los experimentos pueden no ser adecuados para medir diferencias individuales</div>
+                    <div class="project-summary">Investigamos el llamado de Cronbach de 1956 para fusionar la psicología diferencial y experimental usando experimentos verdaderos para estudiar diferencias individuales. A través de simulación, mostramos que <b>los contrastes definidos experimentalmente son demasiado propensos al ruido</b> para ser útiles a nivel individual, dificultando descubrir incluso estructuras latentes simples. Introducimos una <b>nueva medida de razón señal-ruido</b> de la bondad de la tarea que es invariante entre experimentos. Nuestros hallazgos revelan que las estructuras de clúster o factor latente solo fueron recuperables en los experimentos más grandes (cientos de personas, cientos de ensayos por condición), y solo para las estructuras más simples. Estos resultados sirven como advertencia: aunque la fusión de Cronbach es teóricamente atractiva, enfrenta obstáculos prácticos sustanciales.</div>
+                    <!-- "Read more!" button can be removed if not needed -->
+                    <!-- <div class="project-read-more-container">
+                        <a href="/projects/ezbhdm.html" class="project-read-more-btn">¡Leer más!</a>
+                    </div> -->
+                    <div class="project-links-bottom">
+                        <div class="project-external-links">
+                            <!--<a href="https://github.com/Adrifelcha/EZ-project" class="project-icon-link" target="_blank" title="Repositorio GitHub">
+                                <i class="fa fa-github"></i> Repositorio GitHub
+                            </a> -->
+                            <!--<span class="link-separator">|</span>-->
+                            <a href="https://osf.io/preprints/psyarxiv/8ktn6_v1" class="project-icon-link" target="_blank" title="Preimpresión">
+                                <i class="fa fa-file-text-o"></i> Ver preimpresión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const keywordButtons = document.querySelectorAll('.keyword-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+    const definitionItems = document.querySelectorAll('.definition-item');
+    
+    // Hide all definition boxes by default on page load
+    definitionItems.forEach(item => {
+        item.style.display = 'none';
+    });
+    
+    keywordButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const keyword = this.getAttribute('data-keyword');
+            
+            // Update active button
+            keywordButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter definitions - hide all when "all" is selected
+            definitionItems.forEach(item => {
+                if (keyword === 'all') {
+                    item.style.display = 'none';
+                } else {
+                    const itemKeyword = item.getAttribute('data-keyword');
+                    if (itemKeyword === keyword) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+            
+            // Filter projects
+            projectItems.forEach(item => {
+                if (keyword === 'all') {
+                    item.style.display = '';
+                } else {
+                    const keywords = item.getAttribute('data-keywords').split(' ');
+                    if (keywords.includes(keyword)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
