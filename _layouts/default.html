@@ -29,6 +29,24 @@
 				// Set language preference
 				function setLanguage(lang) {
 					localStorage.setItem('preferred-language', lang);
+					
+					// Check if we're on a publications page and need to redirect
+					const currentPath = window.location.pathname;
+					const isPublicationsPage = currentPath.startsWith('/publications');
+					
+					if (isPublicationsPage) {
+						// Redirect to the appropriate language version
+						if (lang === 'es' && currentPath.startsWith('/publications/') && !currentPath.startsWith('/publications_es/')) {
+							// Redirect from English to Spanish publications
+							window.location.href = currentPath.replace('/publications/', '/publications_es/');
+							return; // Exit early, page will reload
+						} else if (lang === 'en' && currentPath.startsWith('/publications_es/')) {
+							// Redirect from Spanish to English publications
+							window.location.href = currentPath.replace('/publications_es/', '/publications/');
+							return; // Exit early, page will reload
+						}
+					}
+					
 					applyLanguage(lang);
 				}
 
@@ -72,6 +90,15 @@
 							} else {
 								// Simple text replacement
 								element.textContent = text;
+							}
+						}
+						
+						// Update href for language-specific URLs (like publications)
+						if (element.hasAttribute('data-href-en') && element.hasAttribute('data-href-es')) {
+							if (lang === 'es') {
+								element.setAttribute('href', element.getAttribute('data-href-es'));
+							} else {
+								element.setAttribute('href', element.getAttribute('data-href-en'));
 							}
 						}
 					});
@@ -141,11 +168,11 @@
 <ul class="mainnav" data-translate="nav">
   <li><a href="/" data-translate-key="home">Home</a></li>
   <li class="hassubs">
-    <a href="/publications/" data-translate-key="publications">Publications and Presentations</a>
+    <a href="/publications/" data-translate-key="publications" data-href-en="/publications/" data-href-es="/publications_es/">Publications and Presentations</a>
     <ul class="dropdown">
-      <li class="subs"><a href="/publications/index.html#Papers" data-translate-key="papers">Papers</a></li>
-      <li class="subs"><a href="/publications/index.html#Conferences" data-translate-key="talks">Talks</a></li>
-      <li class="subs"><a href="/publications/index.html#Posters" data-translate-key="posters">Posters</a></li>
+      <li class="subs"><a href="/publications/index.html#Papers" data-translate-key="papers" data-href-en="/publications/index.html#Papers" data-href-es="/publications_es/index.html#Papers">Papers</a></li>
+      <li class="subs"><a href="/publications/index.html#Conferences" data-translate-key="talks" data-href-en="/publications/index.html#Conferences" data-href-es="/publications_es/index.html#Conferences">Talks</a></li>
+      <li class="subs"><a href="/publications/index.html#Posters" data-translate-key="posters" data-href-en="/publications/index.html#Posters" data-href-es="/publications_es/index.html#Posters">Posters</a></li>
     </ul>
   </li>
   <li class="hassubs">
