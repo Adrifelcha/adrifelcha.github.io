@@ -934,6 +934,17 @@ ul.dropdown > li.subs:first-child {
     margin-bottom: 20px;
 }
 
+.project-item .project-summary ul {
+    margin: 10px 0 10px 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.project-item .project-summary li {
+    margin-bottom: 8px;
+    line-height: 1.5em;
+}
+
 /* Project Links Container - Bottom Section */
 .project-links-bottom {
     display: flex;
