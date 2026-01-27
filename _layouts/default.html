@@ -30,10 +30,11 @@
 				function setLanguage(lang) {
 					localStorage.setItem('preferred-language', lang);
 					
-					// Check if we're on a publications or projects page and need to redirect
+					// Check if we're on a publications, projects, or teaching page and need to redirect
 					const currentPath = window.location.pathname;
 					const isPublicationsPage = currentPath.startsWith('/publications');
 					const isProjectsPage = currentPath.startsWith('/projects');
+					const isTeachingPage = currentPath.startsWith('/teaching');
 					
 					if (isPublicationsPage) {
 						// Redirect to the appropriate language version
@@ -55,6 +56,28 @@
 						} else if (lang === 'en' && currentPath.startsWith('/projects_es/')) {
 							// Redirect from Spanish to English projects
 							window.location.href = currentPath.replace('/projects_es/', '/projects/');
+							return; // Exit early, page will reload
+						}
+					} else if (isTeachingPage) {
+						// Redirect to the appropriate language version
+						if (lang === 'es' && currentPath.startsWith('/teaching/') && !currentPath.startsWith('/teaching_es/')) {
+							// Redirect from English to Spanish teaching
+							window.location.href = currentPath.replace('/teaching/', '/teaching_es/');
+							return; // Exit early, page will reload
+						} else if (lang === 'en' && currentPath.startsWith('/teaching_es/')) {
+							// Redirect from Spanish to English teaching
+							window.location.href = currentPath.replace('/teaching_es/', '/teaching/');
+							return; // Exit early, page will reload
+						}
+					} else if (isTeachingPage) {
+						// Redirect to the appropriate language version
+						if (lang === 'es' && currentPath.startsWith('/teaching/') && !currentPath.startsWith('/teaching_es/')) {
+							// Redirect from English to Spanish teaching
+							window.location.href = currentPath.replace('/teaching/', '/teaching_es/');
+							return; // Exit early, page will reload
+						} else if (lang === 'en' && currentPath.startsWith('/teaching_es/')) {
+							// Redirect from Spanish to English teaching
+							window.location.href = currentPath.replace('/teaching_es/', '/teaching/');
 							return; // Exit early, page will reload
 						}
 					}
@@ -195,7 +218,7 @@
     </ul>-->
   </li>
   <li class="hassubs">
-    <a href="/teaching/" data-translate-key="teaching">Teaching<br>Materials</a>
+    <a href="/teaching/" data-translate-key="teaching" data-href-en="/teaching/" data-href-es="/teaching_es/">Teaching<br>Materials</a>
     <!--<ul class="dropdown">
       <li class="subs"><a href="/teaching/sdt.html">Signal Detection Theory</a></li>
       <li class="subs"><a href="/teaching/probability.html">Probability & Inference</a></li>
