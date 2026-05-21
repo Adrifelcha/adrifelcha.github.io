@@ -50,7 +50,7 @@ es:
   home:
     greeting: "¡Holi!"
     bio1: "Soy"
-    bio2: "candidata a doctora en Ciencias Cognitivas en la Universidad de California, Irvine"
+    bio2: "doctora en Ciencias Cognitivas en la Universidad de California, Irvine"
     bio3: "Estoy interesada en el desarrollo de modelos Bayesianos para el estudio de diferencias individuales bajo la perspectiva de la psicometría cognitiva."
     bio4: "Mi trabajo se enfoca en facilitar la implementación Bayesiana de modelos cognitivos procedimentales (por ejemplo, modelos de difusión para datos de elección y tiempo de respuesta) de manera que puedan ser usados como modelos psicométricos. Con este fin, desarrollo:"
     bio5: "Software abierto (e.g., paquetes en JAGS)"
@@ -61,7 +61,7 @@ es:
     origins: "Orígen"
     origins_content: "Iztapalapa, Ciudad de México<br>7 de marzo de 1993"
     education: "Educación"
-    education_content: "Lic. en Psicología (UNAM)<br>Maestría en Estadística (UC Irvine)<br><span class=\"phd-highlight\">Candidata a Doctora en UC Irvine</span>"
+    education_content: "Lic. en Psicología (UNAM)<br>Maestría en Estadística (UC Irvine)<br><span class=\"phd-highlight\">Doctorado en Ciencias Cognitivas en UC Irvine</span>"
     professional: "Experiencia Profesional"
     professional_content: "• Psicómetra en INEE<br>• Consultora en SEP<br>• Desarrolladora de pruebas en UNAM<br>• Analista de datos en Applied Cognitive Diagnostics"
     advisors: "Mentores"
