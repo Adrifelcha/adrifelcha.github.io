@@ -802,6 +802,14 @@ ul.dropdown > li.subs:first-child {
     border-radius: 3px;
 }
 
+.presenter-note {
+    display: block;
+    font-size: 0.85em;
+    font-style: italic;
+    color: #777;
+    margin-top: 5px;
+}
+
 /* Blog/Events Page Styling */
 .blog-list {
     margin-top: 20px;
