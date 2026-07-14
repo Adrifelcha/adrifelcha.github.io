@@ -1995,21 +1995,30 @@ ul.dropdown > li.subs:first-child {
 
 .experience-legend {
     text-align: center;
-    color: #B69B87 !important;  /* Darker orange-gray color */
+    color: #BF5700 !important;
     font-size: 0.95em;
     margin-top: 10px;
 }
 
+.institution-name {
+    font-style: italic;
+    color: #555;
+}
+
 .advisors-list {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 0.85em;
+    line-height: 1.5;
 }
 
 .advisor-subtitle {
     display: inline-block;
-    color: #B56504;
-    font-size: 1.15em;
-    margin-top: 0.65em;
+    color: #a0522d;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin-top: 0.8em;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .advisors-list .advisor-subtitle:first-child {

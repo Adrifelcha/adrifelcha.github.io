@@ -1,0 +1,62 @@
+current directory: /home/babymagikarp/Desktop/adrifelcha.github.io/vendor/bundle/ruby/2.7.0/gems/json-2.21.1/ext/json/ext/parser
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20260713-18104-1bcwdt7.rb extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... no
+checking for rb_str_to_interned_str() in ruby.h... no
+checking for rb_hash_new_capa() in ruby.h... no
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for ruby_xfree_sized() in ruby.h... no
+checking for x86intrin.h... yes
+checking for _lzcnt_u64() in x86intrin.h... no
+checking for intrin.h... no
+checking for RUBY_TYPED_EMBEDDABLE in ruby.h... no
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for x86intrin.h... yes
+checking for cpuid.h... yes
+creating Makefile
+
+current directory: /home/babymagikarp/Desktop/adrifelcha.github.io/vendor/bundle/ruby/2.7.0/gems/json-2.21.1/ext/json/ext/parser
+make "DESTDIR=" clean
+
+current directory: /home/babymagikarp/Desktop/adrifelcha.github.io/vendor/bundle/ruby/2.7.0/gems/json-2.21.1/ext/json/ext/parser
+make "DESTDIR="
+compiling parser.c
+parser.c:1587:28: warning: always_inline function might not be inlinable [-Wattributes]
+ 1587 | ALWAYS_INLINE(static) bool json_parse_any(JSON_ParserState *state, JSON_ParserConfig *config, bool resumable)
+      |                            ^~~~~~~~~~~~~~
+parser.c:1561:28: warning: always_inline function might not be inlinable [-Wattributes]
+ 1561 | ALWAYS_INLINE(static) void json_match_keyword(JSON_ParserState *state, const char *keyword, size_t offset)
+      |                            ^~~~~~~~~~~~~~~~~~
+parser.c:1369:29: warning: always_inline function might not be inlinable [-Wattributes]
+ 1369 | ALWAYS_INLINE(static) VALUE json_parse_string(JSON_ParserState *state, JSON_ParserConfig *config, bool is_name)
+      |                             ^~~~~~~~~~~~~~~~~
+parser.c:1292:28: warning: always_inline function might not be inlinable [-Wattributes]
+ 1292 | ALWAYS_INLINE(static) bool string_scan(JSON_ParserState *state)
+      |                            ^~~~~~~~~~~
+parser.c:876:1: warning: always_inline function might not be inlinable [-Wattributes]
+  876 | json_eat_whitespace(JSON_ParserState *state, JSON_ParserConfig *config, bool include_comments)
+      | ^~~~~~~~~~~~~~~~~~~
+parser.c:831:1: warning: always_inline function might not be inlinable [-Wattributes]
+  831 | json_eat_whitespace_resume_at(JSON_ParserState *state, JSON_ParserConfig *config, bool include_comments, const char *resume_pos)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+parser.c:152:29: warning: always_inline function might not be inlinable [-Wattributes]
+  152 | ALWAYS_INLINE(static) VALUE rstring_cache_fetch(rvalue_cache *cache, const char *str, const long length)
+      |                             ^~~~~~~~~~~~~~~~~~~
+parser.c:138:27: warning: always_inline function might not be inlinable [-Wattributes]
+  138 | ALWAYS_INLINE(static) int rstring_cache_cmp(const char *str, const long length, VALUE rstring)
+      |                           ^~~~~~~~~~~~~~~~~
+In file included from parser.c:3:
+../simd/simd.h:171:39: warning: always_inline function might not be inlinable [-Wattributes]
+  171 | ALWAYS_INLINE(static) TARGET_SSE2 int string_scan_simd_sse2(const char **ptr, const char *end, int *mask)
+      |                                       ^~~~~~~~~~~~~~~~~~~~~
+../simd/simd.h:160:39: warning: always_inline function might not be inlinable [-Wattributes]
+  160 | ALWAYS_INLINE(static) TARGET_SSE2 int compute_chunk_mask_sse2(const char *ptr)
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from parser.c:3:
+../simd/simd.h:63:28: warning: always_inline function might not be inlinable [-Wattributes]
+   63 | ALWAYS_INLINE(static) void json_fast_memcpy16(char *dst, const char *src, size_t len)
+      |                            ^~~~~~~~~~~~~~~~~~
+linking shared-object json/ext/parser.so
+
+current directory: /home/babymagikarp/Desktop/adrifelcha.github.io/vendor/bundle/ruby/2.7.0/gems/json-2.21.1/ext/json/ext/parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 parser.so ./.gem.20260713-18104-yz543z/json/ext
