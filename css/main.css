@@ -1,8 +1,14 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
-    margin: 30px auto 10px auto;
+    margin: 30px auto 0 auto;
     max-width: 1400px;
-    width: 92%;
+    width: 91%;
     background-color: #f5f5f5;  /* Updated from #FAF0E1 to light gray */
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 
@@ -12,6 +18,11 @@ nav ul, footer ul {
     font-size:1.2em;
     list-style: none;
     text-align:center; 
+}
+
+footer ul {
+    padding: 10px 20px 5px 20px;
+    margin: 0;
 }
 
 nav ul li, footer ul li {
@@ -173,9 +184,9 @@ li.ho{
 
 
 footer {
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
     text-align: center;
     font-size: small;
 }
