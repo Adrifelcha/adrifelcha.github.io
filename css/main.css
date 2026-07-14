@@ -497,10 +497,11 @@ hr.style18:before {
     width: 100%;
     padding: 12px 16px;
     color: #FFFFFF !important;
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     text-decoration: none;
-    font-size: 1.1em;
-    line-height: 1.3em;
+    font-size: 1.15em;
+    font-weight: bold;
+    line-height: 1.35em;
     text-align: center;
     white-space: normal;
     word-wrap: break-word;
@@ -581,6 +582,8 @@ ul.dropdown > li.subs:first-child {
     text-decoration: none;
     text-align: left !important;
     justify-content: flex-start !important;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
 }
 
 .subs:hover {
