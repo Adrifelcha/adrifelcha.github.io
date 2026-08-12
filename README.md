@@ -25,7 +25,7 @@ This repository contains the source code for my personal academic website, where
 ## Contact
 
 For any questions or suggestions about this website, please feel free to:
-- Email me at achavezd@uci.edu
+- Email me at my personal email: adrifelcha@gmail.com
 - Visit my [GitHub profile](https://github.com/Adrifelcha)
 
 bundle exec jekyll serve
