@@ -376,7 +376,7 @@ hr.style18:before {
     gap: 40px;
     margin: 20px auto;
     max-width: 1300px;
-    padding: 3px 30px 30px 30px;  /* Reduced top padding from 7px to 3px */
+    padding: 42px 45px 42px 45px;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #C4786A;
     border-radius: 15px;
@@ -394,8 +394,16 @@ hr.style18:before {
 }
 
 .bio-content {
-    padding: 20px;
+    padding: 0 10px 10px 0;
     flex-grow: 1;
+}
+
+.bio-greeting {
+    font-style: italic;
+    font-size: 2em;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 .bio-text {
@@ -403,6 +411,8 @@ hr.style18:before {
     line-height: 1.6;
     color: #333;
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .social-links {
@@ -1142,6 +1152,11 @@ ul.dropdown > li.subs:first-child {
 .emphasis {
     font-weight: bold;
     color: #B22222;  /* matches the brick red used in section titles */
+}
+
+.emphasis-black {
+    font-weight: bold;
+    color: #000;
 }
 
 /* Responsive Design - Consolidated with main page media queries below */
