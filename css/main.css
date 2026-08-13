@@ -378,9 +378,9 @@ hr.style18:before {
     max-width: 1300px;
     padding: 3px 30px 30px 30px;  /* Reduced top padding from 7px to 3px */
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #BF8B5E;
+    border: 1px solid #C4786A;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(87, 49, 12, 0.15);
+    box-shadow: 0 4px 20px rgba(139, 30, 30, 0.15);
 }
 
 .profile-image {
@@ -415,8 +415,8 @@ hr.style18:before {
 .social-button {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #8b4513;  /* Dark brown background */
-    border: 1px solid #8b4513;
+    background-color: #B22222;  /* Brick red background */
+    border: 1px solid #B22222;
     border-radius: 20px;
     color: white;  /* White text */
     text-decoration: none;
@@ -426,8 +426,8 @@ hr.style18:before {
 }
 
 .social-button:hover {
-    background-color: #BF8B5E;  /* Lighter brown on hover */
-    border-color: #BF8B5E;
+    background-color: #C4786A;  /* Lighter brick red on hover */
+    border-color: #C4786A;
     transform: translateY(-2px);
 }
 
@@ -646,7 +646,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .section-title {
-    color: #a0522d;
+    color: #C44536;
     text-align: center;
     font-size: 2.3em;
     text-transform: uppercase;
@@ -662,7 +662,7 @@ ul.dropdown > li.subs:first-child {
     left: 5%;  /* Start at 15% to center the 70% width */
     width: 90%;
     height: 2px;
-    background-color: #8b4513;  /* Matching bullet points color */
+    background-color: #B22222;  /* Matching bullet points color */
 }
 
 .section-title::before {
@@ -676,7 +676,7 @@ ul.dropdown > li.subs:first-child {
 .publication-list h3 {
     text-align: left;
     font-weight: 600;
-    color: #8b4513;
+    color: #B22222;
     font-size: 24px;
     margin-top: 45px;
     margin-bottom: 25px;
@@ -700,7 +700,7 @@ ul.dropdown > li.subs:first-child {
 
 .pub-content::before {
     content: "➤";
-    color: #8b4513;
+    color: #B22222;
     position: absolute;
     left: -28px;
     top: 0;
@@ -772,7 +772,7 @@ ul.dropdown > li.subs:first-child {
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    background-color: #754B33;
+    background-color: #8C1515;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -782,18 +782,18 @@ ul.dropdown > li.subs:first-child {
 }
 
 .pub-button:hover {
-    background-color: #50331A;
+    background-color: #6B1010;
     text-decoration: none;
 }
 
 .citation a {
-    color: #8b4513;           /* Same brown as titles */
+    color: #B22222;           /* Same brick red as titles */
     text-decoration: underline;
     font-size: inherit;       /* Same size as rest of citation */
 }
 
 .citation a:hover {
-    color: #a0522d;          /* Slightly lighter brown on hover */
+    color: #C44536;          /* Slightly lighter brick red on hover */
 }
 
 .citation .author-highlight {
@@ -845,9 +845,9 @@ ul.dropdown > li.subs:first-child {
 .blog-list .blog-content {
     position: relative; /* For absolute positioning of project-links */
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #BF8B5E;
+    border: 1px solid #C4786A;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
+    box-shadow: 0 2px 4px rgba(139, 30, 30, 0.1);
     padding: 15px 25px;
     margin-bottom: 15px;
 }
@@ -864,7 +864,7 @@ ul.dropdown > li.subs:first-child {
 
 .keyword-btn {
     background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid #BF8B5E;
+    border: 1px solid #C4786A;
     border-radius: 6px;
     padding: 10px 20px;
     font-size: 1em;
@@ -872,20 +872,20 @@ ul.dropdown > li.subs:first-child {
     color: #333;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
+    box-shadow: 0 2px 4px rgba(139, 30, 30, 0.1);
 }
 
 .keyword-btn:hover {
-    background-color: #BF8B5E;
+    background-color: #C4786A;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(87, 49, 12, 0.2);
+    box-shadow: 0 4px 6px rgba(139, 30, 30, 0.2);
 }
 
 .keyword-btn.active {
-    background-color: #8b4513;
+    background-color: #B22222;
     color: white;
-    border-color: #8b4513;
+    border-color: #B22222;
     font-weight: bold;
 }
 
@@ -921,8 +921,8 @@ ul.dropdown > li.subs:first-child {
 
 /* Definition content with solid background */
 .definition-item .definition-content {
-    background-color: #8B4513 !important;
-    border: 2px solid #6B3410;
+    background-color: #B22222 !important;
+    border: 2px solid #6B1010;
     color: white;
     padding: 0;
 }
@@ -949,7 +949,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .project-item:hover .blog-content {
-    box-shadow: 0 4px 8px rgba(87, 49, 12, 0.2);
+    box-shadow: 0 4px 8px rgba(139, 30, 30, 0.2);
 }
 
 /* Project-specific summary - only for Projects page */
@@ -981,7 +981,7 @@ ul.dropdown > li.subs:first-child {
     gap: 15px;
     margin-top: 20px;
     padding-top: 15px;
-    border-top: 1px solid #BF8B5E;
+    border-top: 1px solid #C4786A;
 }
 
 /* Read More Button Container - Centered, Above Horizontal Rule */
@@ -997,26 +997,26 @@ ul.dropdown > li.subs:first-child {
     display: inline-block;
     text-align: center;
     background-color: #FFF9E6;
-    color: #8b4513;
+    color: #B22222;
     font-size: 1.2em;
     font-family: 'Courier New', 'Courier', monospace;
     font-weight: bold;
     text-decoration: none;
     padding: 12px 25px;
-    border: 2px solid #BF8B5E;
+    border: 2px solid #C4786A;
     border-radius: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(87, 49, 12, 0.1);
+    box-shadow: 0 2px 4px rgba(139, 30, 30, 0.1);
 }
 
 .project-read-more-btn:hover {
     background-color: #FFE5B4;
-    border-color: #8b4513;
+    border-color: #B22222;
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(87, 49, 12, 0.2);
+    box-shadow: 0 4px 6px rgba(139, 30, 30, 0.2);
     text-decoration: none;
-    color: #8b4513;
+    color: #B22222;
 }
 
 /* External Links - Bottom Right Corner */
@@ -1030,7 +1030,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .project-icon-link {
-    color: #8b4513;
+    color: #B22222;
     text-decoration: none;
     transition: color 0.3s ease;
     display: inline-flex;
@@ -1043,12 +1043,12 @@ ul.dropdown > li.subs:first-child {
 }
 
 .project-icon-link:hover {
-    color: #BF8B5E;
+    color: #C4786A;
     text-decoration: underline;
 }
 
 .link-separator {
-    color: #BF8B5E;
+    color: #C4786A;
     margin: 0 5px;
 }
 
@@ -1060,13 +1060,13 @@ ul.dropdown > li.subs:first-child {
 }
 
 .post-date {
-    color: #8b4513;
+    color: #B22222;
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: right;
     padding-right: 20px;
-    border-right: 1px solid #BF8B5E;
+    border-right: 1px solid #C4786A;
     text-decoration: none;  /* Ensures dates never get underlined */
 }
 
@@ -1082,7 +1082,7 @@ ul.dropdown > li.subs:first-child {
 .project-item .blog-content .post-title {
     font-size: 1.5em;
     font-weight: bold;
-    color: #8b4513;
+    color: #B22222;
     font-family: 'Georgia', serif;
     margin-bottom: 10px;
 }
@@ -1116,7 +1116,7 @@ ul.dropdown > li.subs:first-child {
 
 .emphasis {
     font-weight: bold;
-    color: #8b4513;  /* matches the brown color used in section titles */
+    color: #B22222;  /* matches the brick red used in section titles */
 }
 
 /* Responsive Design - Consolidated with main page media queries below */
@@ -1643,10 +1643,10 @@ ul.dropdown > li.subs:first-child {
 
 .event-content {
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #BF8B5E;
+    border: 1px solid #C4786A;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 4px 20px rgba(87, 49, 12, 0.15);
+    box-shadow: 0 4px 20px rgba(139, 30, 30, 0.15);
 }
 
 .event-header {
@@ -1654,22 +1654,22 @@ ul.dropdown > li.subs:first-child {
     padding-bottom: 5px;
     border-bottom-width: 3px;
     border-bottom-style: dotted;
-    border-bottom-color: rgba(160, 82, 45, 0.75);
-    background-image: linear-gradient(to right, rgba(160, 82, 45, 0.75) 33%, rgba(255,255,255,0.5) 0%);
+    border-bottom-color: rgba(178, 34, 34, 0.75);
+    background-image: linear-gradient(to right, rgba(178, 34, 34, 0.75) 33%, rgba(255,255,255,0.5) 0%);
     background-position: bottom;
     background-size: 8px 2px;  /* First number controls spacing between dots */
     background-repeat: repeat-x;
 }
 
 .event-title {
-    color: #8b4513;
+    color: #B22222;
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .event-date {
     text-align: right;  /* Align to the right */
-    color: #8b4513;
+    color: #B22222;
     font-size: 1.4em;   /* Increased from 1.1em */
     font-weight: bold;
     margin-bottom: 20px;
@@ -1688,7 +1688,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .event-body h3 {
-    color: #8b4513;
+    color: #B22222;
     text-align: center;
     margin: 25px 0 15px 0;
     padding-bottom: 10px;
@@ -1702,7 +1702,7 @@ ul.dropdown > li.subs:first-child {
     left: 45%;
     transform: translateX(-40%);
     width: 60%;
-    border-bottom: 5px dotted rgba(160, 82, 45, 0.75);  /* Changed to match section title color (#a0522d) */
+    border-bottom: 5px dotted rgba(178, 34, 34, 0.75);  /* Changed to match section title color (#C44536) */
 }
 
 .event-body img {
@@ -1744,18 +1744,18 @@ ul.dropdown > li.subs:first-child {
 
 .back-link {
     display: inline-block;
-    color: #8b4513;
+    color: #B22222;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
     padding: 8px 16px;
-    border: 1px solid #BF8B5E;
+    border: 1px solid #C4786A;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
 
 .back-link:hover {
-    background: rgba(191, 139, 94, 0.2);
+    background: rgba(196, 120, 106, 0.2);
     transform: translateX(-5px);
 }
 
@@ -1777,15 +1777,15 @@ ul.dropdown > li.subs:first-child {
     justify-content: center;
     width: 40px;
     height: 40px;
-    border: 1px solid #BF8B5E;
+    border: 1px solid #C4786A;
     border-radius: 50%;
-    color: #8b4513;
+    color: #B22222;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .nav-arrow:hover {
-    background: rgba(191, 139, 94, 0.2);
+    background: rgba(196, 120, 106, 0.2);
     transform: scale(1.1);
 }
 
@@ -1875,14 +1875,14 @@ ul.dropdown > li.subs:first-child {
 }
 
 .email-link {
-    color: #8b4513;
+    color: #B22222;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 .email-link:hover {
-    color: #BF8B5E;
+    color: #C4786A;
 }
 
 .email-link i {
@@ -1895,14 +1895,14 @@ ul.dropdown > li.subs:first-child {
 }
 
 .github-link {
-    color: #8b4513;
+    color: #B22222;
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 .github-link:hover {
-    color: #BF8B5E;
+    color: #C4786A;
 }
 
 .github-link i {
@@ -1917,16 +1917,16 @@ ul.dropdown > li.subs:first-child {
 }
 
 .more-about-title {
-    color: #8b4513;
+    color: #B22222;
     text-align: center;
     font-size: 2em;
     margin: 20px 0 10px 0;
     padding-bottom: 10px;
     background: linear-gradient(to right, 
-        rgba(191, 139, 94, 0) 0%,
-        #BF8B5E 25%,
-        #BF8B5E 75%,
-        rgba(191, 139, 94, 0) 100%
+        rgba(196, 120, 106, 0) 0%,
+        #C4786A 25%,
+        #C4786A 75%,
+        rgba(196, 120, 106, 0) 100%
     );
     background-size: 100% 4px;
     background-position: 0 100%;
@@ -1935,7 +1935,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .more-about-title i {
-    color: #8b4513;  /* Changed to match text color */
+    color: #B22222;  /* Changed to match text color */
     font-size: 0.9em;
 }
 
@@ -1988,7 +1988,7 @@ ul.dropdown > li.subs:first-child {
 /* Keep responsive design - consolidated into main media queries */
 
 .info-box h3 {
-    color: #8b4513;
+    color: #B22222;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.7em;
@@ -2002,7 +2002,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .phd-highlight {
-    color: #8b4513;
+    color: #B22222;
     font-weight: bold;
 }
 
@@ -2024,7 +2024,7 @@ ul.dropdown > li.subs:first-child {
 
 .experience-legend {
     text-align: center;
-    color: #BF5700 !important;
+    color: #C44536 !important;
     font-size: 0.95em;
     margin-top: 10px;
 }
@@ -2042,7 +2042,7 @@ ul.dropdown > li.subs:first-child {
 
 .advisor-subtitle {
     display: inline-block;
-    color: #a0522d;
+    color: #C44536;
     font-size: 0.95em;
     font-weight: 600;
     margin-top: 0.8em;
@@ -2055,14 +2055,14 @@ ul.dropdown > li.subs:first-child {
 }
 
 .advisor-role {
-    color: #BF5700;
+    color: #C44536;
     font-size: 0.95em;
     font-style: italic;
     font-weight: normal;
 }
 
 .event-body a {
-    color: #8b4513;  /* Matches your brown color scheme */
+    color: #B22222;  /* Matches your brick red color scheme */
     text-decoration: none;
     font-size: 1.1em;  /* Matches paragraph text size */
     background: linear-gradient(120deg, rgba(255, 255, 0, 0.4) 0%, rgba(255, 255, 0, 0.4) 100%);
@@ -2071,7 +2071,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .event-body a:hover {
-    color: #a0522d;  /* Slightly lighter brown on hover */
+    color: #C44536;  /* Slightly lighter brick red on hover */
     text-decoration: none;
 }
 
@@ -2095,10 +2095,10 @@ ul.dropdown > li.subs:first-child {
 /* Blog Layout Styling */
 .blog-content {
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #BF8B5E;
+    border: 1px solid #C4786A;
     border-radius: 15px;
     padding: 30px;
-    box-shadow: 0 4px 20px rgba(87, 49, 12, 0.15);
+    box-shadow: 0 4px 20px rgba(139, 30, 30, 0.15);
     position: relative;
 }
 
@@ -2126,7 +2126,7 @@ ul.dropdown > li.subs:first-child {
 }
 
 .blog-body h3 {
-    color: #8b4513;
+    color: #B22222;
     text-align: left;
     margin: 25px 0 15px 0;
     padding-bottom: 0;
