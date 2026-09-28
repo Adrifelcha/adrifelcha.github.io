@@ -12,7 +12,7 @@ en:
     thoughts: "Opinions and Thoughts :O"
   home:
     greeting: "Hi! Nice to meet you"
-    bio_p1: "I am Dr. Adriana Felisa Chávez De la Peña, a Mexican quantitative psychologist (<i>From Iztapalapa to the world!</i>) primarily interested in psychometrics, measurement, assessment, and the modeling of cognitive processes."
+    bio_p1: "I am Dr. Adriana Felisa Chávez De la Peña, a Mexican quantitative psychologist primarily interested in psychometrics, measurement, assessment, and the modeling of cognitive processes."
     bio_p2: "I hold a <span class=\"emphasis-black\">Ph.D. in Cognitive Sciences</span> from the <span class=\"emphasis\">University of California, Irvine (UCI)</span>, where I also completed an <span class=\"emphasis-black\">M.S. in Statistics</span>. My work focuses on developing mathematical models that account for the relationship between observable behavior and the underlying cognitive processes, and on implementing those models in a Bayesian framework. My main line of research concerns the use of hierarchical Bayesian models to study individual differences and the effect of covariates of interest (for example, age, gender, or the level of proficiency reflected in a performance test) on different cognitive components."
     bio_p3: "I currently work in the Graduate School of Education at <span class=\"emphasis\">Stanford University</span>, where I am completing a <span class=\"emphasis-black\">postdoctoral</span> appointment with Dr. Jelena Obradović. I work on a project focused on developing robust, scalable measurement tools to study executive functions, creativity, and exploration in young children."
     contact_info: "Contact information:"
