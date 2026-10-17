@@ -415,6 +415,24 @@ hr.style18:before {
     margin-bottom: 1em;
 }
 
+.name-audio-btn {
+    display: inline;
+    margin: 0 0.05em;
+    padding: 0 0.15em;
+    border: none;
+    background: transparent;
+    color: #B22222;
+    font-size: 0.95em;
+    line-height: inherit;
+    cursor: pointer;
+    vertical-align: baseline;
+}
+
+.name-audio-btn:hover,
+.name-audio-btn:focus {
+    color: #7a1616;
+}
+
 .social-links {
     display: flex;
     justify-content: flex-end;
