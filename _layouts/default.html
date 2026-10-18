@@ -177,6 +177,7 @@
 						tab.addEventListener('click', function() {
 							const lang = this.dataset.lang;
 							setLanguage(lang);
+							closeMobileNav();
 						});
 					});
 
@@ -189,18 +190,125 @@
 							item.classList.remove('has-dropdown');
 						}
 					});
+
+					var mainNav = document.querySelector('.mainnav');
+					if (mainNav) {
+						mainNav.addEventListener('click', function (event) {
+							if (!window.matchMedia('(max-width: 768px)').matches) {
+								return;
+							}
+							var link = event.target.closest('a');
+							if (!link || !mainNav.contains(link)) {
+								return;
+							}
+							var item = link.parentElement;
+							if (!item || !item.classList.contains('hassubs') || !item.classList.contains('has-dropdown') || link.parentElement !== item) {
+								return;
+							}
+							var isOpen = item.classList.contains('dropdown-active');
+							mainNav.querySelectorAll('.dropdown-active').forEach(function (openItem) {
+								openItem.classList.remove('dropdown-active');
+								var openLink = openItem.querySelector(':scope > a');
+								if (openLink) {
+									openLink.setAttribute('aria-expanded', 'false');
+								}
+							});
+							if (!isOpen) {
+								event.preventDefault();
+								item.classList.add('dropdown-active');
+								link.setAttribute('aria-expanded', 'true');
+							}
+						});
+					}
+
+					function closeOpenSubmenus() {
+						document.querySelectorAll('.mainnav .dropdown-active').forEach(function (openItem) {
+							openItem.classList.remove('dropdown-active');
+							var openLink = openItem.querySelector(':scope > a');
+							if (openLink) {
+								openLink.setAttribute('aria-expanded', 'false');
+							}
+						});
+					}
+
+					function closeMobileNav() {
+						document.body.classList.remove('nav-open');
+						var toggle = document.querySelector('.nav-toggle');
+						if (toggle) {
+							toggle.setAttribute('aria-expanded', 'false');
+							toggle.setAttribute('aria-label', 'Open the menu');
+						}
+						closeOpenSubmenus();
+					}
+
+					function syncHeaderOffset() {
+						if (!window.matchMedia('(max-width: 768px)').matches) {
+							document.body.style.paddingTop = '';
+							closeMobileNav();
+							return;
+						}
+						var bar = document.querySelector('.mobile-header-bar');
+						var langs = document.querySelector('.language-switcher');
+						var height = 0;
+						if (bar) {
+							height += bar.offsetHeight;
+							document.documentElement.style.setProperty('--mobile-bar-height', bar.offsetHeight + 'px');
+						}
+						if (langs) {
+							height += langs.offsetHeight;
+						}
+						document.body.style.paddingTop = height + 'px';
+					}
+
+					var navToggle = document.querySelector('.nav-toggle');
+					if (navToggle) {
+						navToggle.addEventListener('click', function () {
+							var willOpen = !document.body.classList.contains('nav-open');
+							if (!willOpen) {
+								closeMobileNav();
+								return;
+							}
+							document.body.classList.add('nav-open');
+							navToggle.setAttribute('aria-expanded', 'true');
+							navToggle.setAttribute('aria-label', 'Close the menu');
+						});
+					}
+
+					document.addEventListener('click', function (event) {
+						if (event.target.closest('.nav-toggle')) {
+							return;
+						}
+						if (!event.target.closest('.mainnav')) {
+							closeOpenSubmenus();
+						}
+						var header = document.querySelector('.site-header');
+						if (header && !header.contains(event.target)) {
+							closeMobileNav();
+						}
+					});
+
+					window.addEventListener('resize', syncHeaderOffset);
+					syncHeaderOffset();
 				});
 			</script>
 				</head>				
 		
 		<body>
+<header class="site-header">
 <div class="language-switcher">
 	<button class="lang-tab" id="lang-es" data-lang="es">Español</button>
 	<button class="lang-tab active" id="lang-en" data-lang="en">English</button>
 </div>
-<h1 class="name-title">Adriana F. Chávez De la Peña, Ph.D.</h1> 
-	
-<ul class="mainnav" data-translate="nav">
+<div class="mobile-header-bar">
+	<button type="button" class="nav-toggle" aria-label="Open the menu" aria-expanded="false" aria-controls="main-navigation">
+		<span class="nav-toggle-bar"></span>
+		<span class="nav-toggle-bar"></span>
+		<span class="nav-toggle-bar"></span>
+	</button>
+	<a href="/" class="mobile-home" aria-label="Home"><i class="fa fa-home" aria-hidden="true"></i></a>
+	<h1 class="name-title">Adriana F. Chávez De la Peña, Ph.D.</h1>
+</div>
+<ul class="mainnav" id="main-navigation" data-translate="nav">
   <li><a href="/" data-translate-key="home">Home</a></li>
   <li class="hassubs">
     <a href="/publications/" data-translate-key="publications" data-href-en="/publications/" data-href-es="/publications_es/">Publications and Presentations</a>
@@ -232,6 +340,7 @@
     </ul>
   </li>
 </ul>
+</header>
 			<div class="container">
 			
 			{{ content }}
