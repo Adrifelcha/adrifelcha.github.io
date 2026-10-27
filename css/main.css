@@ -387,6 +387,8 @@ hr.style18:before {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    /* Portrait is taller than the square. Anchor to the top so the face sits in the middle. */
+    object-position: center top;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     flex-shrink: 0;
