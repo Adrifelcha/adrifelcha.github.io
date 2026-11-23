@@ -1,10 +1,9 @@
 ---
 layout: event
-title: Conference presentation at SINCA VI (Tlaxcala, Mexico)
+title: Conference presentation at SINCA VI
 date: 2017-11-14
+location: Tlaxcala, Mexico
 ---
-
-### VI SINCA (International Seminar about Behavior and Applications)
 
 In November 2017, the lab traveled to the beautiful city of Tlaxcala to participate in the VI International Seminar about Behavior and Applications (SINCA), hosted by the University of Tlaxcala. 
 
@@ -17,6 +16,6 @@ The symposioum *"Modelos de adaptabilidad en entornos dinámicos: Estudios sobre
 - Transitivity in gains and losses (José Manuel Niño García)
 - The Mirror Effect in perception (Adriana Felisa Chávez De la Peña)
 
-<div style="text-align: center">
-    <img src="/photos/IMG_8597.JPG" alt="Lab25 at SINCA VI">
-</div>
+<figure class="event-figure event-figure--feature">
+    <img src="/photos/events/2017-11-14-sinca-presentation/group.jpg" alt="Lab25 at SINCA VI">
+</figure>

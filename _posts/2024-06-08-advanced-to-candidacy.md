@@ -2,8 +2,8 @@
 layout: event
 title: Advanced to Candidacy
 date: 2024-06-08
+location: Irvine, California
 ---
-### I advanced to candidacy!
 
 On June 8th, 2024, I advanced to candidacy in my Ph.D. program at UC Irvine!
 
@@ -17,11 +17,7 @@ I am very grateful to have been blessed with such a supportive and talented comm
 - [Dr. Veronica Berrocal](https://www.stat.uci.edu/faculty/veronica-berrocal/)
 - [Dr. Aaron Bornstein](https://cnlm.uci.edu/bornstein/)
 
-<div style="text-align: center;">
-    <img src="/photos/lab_dinner.jpeg" alt="Having a celebratory dinner with the CIDLAB at a delicious marroquin restaurant" width="65%" />
-    <br>
-    *I don't have a picture of my committee members, but here's a picture of the CIDLAB celebrating my advancement to candidacy at a delicious marroquin restaurant*
-</div>
-
-
-
+<figure class="event-figure event-figure--feature">
+    <img src="/photos/events/2024-06-08-advanced-to-candidacy/celebration.jpeg" alt="Having a celebratory dinner with the CIDLAB at a delicious marroquin restaurant">
+    <figcaption>I don't have a picture of my committee members, but here's a picture of the CIDLAB celebrating my advancement to candidacy at a delicious marroquin restaurant</figcaption>
+</figure>

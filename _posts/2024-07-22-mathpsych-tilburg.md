@@ -1,19 +1,16 @@
 ---
 layout: event
-title: Conference presentation at MathPsych 2024 (Tilburg, Netherlands)
+title: Conference presentation at MathPsych 2024
 date: 2024-07-22
+location: Tilburg, Netherlands
 ---
-### WoMP-PRIME Travel Award and Conference Presentation at MathPsych (Tilburg, Netherlands)
 
 I had a fantastic time presenting my research at the 2024 Meeting of the Society for Mathematical Psychology in Tilburg, Netherlands. My participation was supported by the Women of MathPsych - Professional Representation for Inclusivity and Minority Empowerment (WoMP-PRIME) Travel and Networking Award, which provided valuable opportunities to connect with leading researchers in mathematical psychology.
 
-<div style="text-align: center;">
-    <img src="/photos/womp_2024.jpeg" alt="Receiving the WoMP-PRIME Travel Award at MathPsych 2024" width="65%" />
-    <br>
-    *Receiving the WoMP-PRIME Travel Award at the 2024 Society for Mathematical Psychology Meeting in Tilburg*
-</div>
-
-<br>
+<figure class="event-figure event-figure--feature">
+    <img src="/photos/events/2024-07-22-mathpsych-tilburg/award.jpeg" alt="Receiving the WoMP-PRIME Travel Award at MathPsych 2024">
+    <figcaption>Receiving the WoMP-PRIME Travel Award at the 2024 Society for Mathematical Psychology Meeting in Tilburg</figcaption>
+</figure>
 
 ### Research Presentation
 

@@ -1,6 +1,8 @@
 ---
 layout: event
-title: Conference presentation at MathPsych 2022 (Toronto, Canada)
+title: Conference presentation at MathPsych 2022
 date: 2022-07-25
+location: Toronto, Canada
 ---
-### I presented my research at the 2022 MathPsych conference in Toronto, Canada.
+
+I presented my research at the 2022 MathPsych conference in Toronto, Canada.

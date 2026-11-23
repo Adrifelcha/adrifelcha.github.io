@@ -2,9 +2,8 @@
 layout: event
 title: Joined the National Institute for Education Evaluation (INEE)
 date: 2018-04-15
+location: Mexico City, Mexico
 ---
-
-### I joined the National Institute for Education Evaluation (INEE)
 
 Shortly after completing my bachelor's degree, I joined the National Institute for Educational Evaluation (INEE) in Mexico City as the lead psychometrist of the Basic Education Division at the Department of Assessment of Teachers and Principals. This role offered me a unique opportunity to apply my statistical and methodological skills to real-world educational challenges.
 
@@ -26,9 +25,3 @@ My primary duties included:
 ### Bridge to Graduate School
 
 This experience proved invaluable in bridging my academic interests with practical applications. Working with large-scale assessments and complex psychometric models reinforced my desire to pursue advanced studies in quantitative methods, which later shaped my decision to pursue a joint Ph.D. in Cognitive Sciences and M.S. in Statistics at UC Irvine.
-
-<!--
-<div style="text-align: center">
-    <img src="/photos/INEE_2018.jpg" alt="At INEE">
-</div> 
-*/

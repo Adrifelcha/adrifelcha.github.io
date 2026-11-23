@@ -61,15 +61,19 @@ layout: default
             {% endif %}
         </div>
         <div class="event-content">
-            <div class="event-header">
-                <div class="event-date">
-                    {{ page.date | date: "%d" }}/{{ page.date | date: "%b" }}/
-                    <span class="year">{{ page.date | date: "%Y" }}</span>
-                </div>
-            </div>
+            <header class="event-header">
+                <h1 class="event-title">{{ page.title }}</h1>
+                <p class="event-meta">
+                    <time class="event-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                        {{ page.date | date: "%-d %b %Y" }}
+                    </time>{% if page.location %}
+                    <span class="event-meta-sep" aria-hidden="true"> - </span>
+                    <span class="event-location">{{ page.location }}</span>{% endif %}
+                </p>
+            </header>
             <div class="event-body">
                 {{ content }}
             </div>
         </div>
     </div>
-</div> 
+</div>

@@ -2,9 +2,8 @@
 layout: event
 title: Started Grad School at UC Irvine
 date: 2020-09-28
+location: Irvine, California
 ---
-
-### I moved to California to start my Ph.D. at UC Irvine!
 
 In Fall 2020, I began my Ph.D. journey at the University of California, Irvine! I joined the Department of Cognitive Sciences under the mentorship of an exceptional team of advisors:
 
@@ -12,12 +11,10 @@ In Fall 2020, I began my Ph.D. journey at the University of California, Irvine! 
 - <a href="https://www.faculty.uci.edu/profile/?facultyId=6493" target="_blank">Jeffrey N. Rouder</a> (Initial Primary Advisor)
 - <a href="http://faculty.sites.uci.edu/mdlee/" target="_blank">Michael D. Lee</a> (Co-advisor)
 
-<div style="text-align: center;">
-    <img src="/photos/UCI.jpeg" alt="UCI Social and Behavioral Sciences Building" width="65%" />
-    <br>
-    *UCI Social and Behavioral Sciences Building*
-</div>
-
+<figure class="event-figure event-figure--feature">
+    <img src="/photos/events/2020-09-28-started-uci-phd/campus.jpeg" alt="UCI Social and Behavioral Sciences Building">
+    <figcaption>UCI Social and Behavioral Sciences Building</figcaption>
+</figure>
 
 ### Joint Program (M.S. in Statistics)
 

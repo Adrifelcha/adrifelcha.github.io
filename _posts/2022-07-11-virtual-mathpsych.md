@@ -2,15 +2,14 @@
 layout: event
 title: People's Choice Award at Virtual MathPsych 2022!
 date: 2022-07-11
+location: Virtual
 ---
-
-### Award-Winning Presentation at Virtual MathPsych 2022! 🏆
 
 I'm thrilled to share that my talk at the 2022 Virtual Mathematical Psychology conference received the People's Choice Award! This recognition from the mathematical psychology community means a lot to me, especially given this was my first conference presentation as a graduate student.
 
-<div style="text-align: center">
-    <img src="/photos/Mathpsych_BestTalkAward.jpeg" alt="People's Choice Award Certificate">
-</div>
+<figure class="event-figure event-figure--feature">
+    <img src="/photos/events/2022-07-11-virtual-mathpsych/award.jpeg" alt="People's Choice Award Certificate">
+</figure>
 
 ### Research Overview
 
@@ -27,8 +26,8 @@ Working with my advisors Jeffrey N. Rouder and Joachim Vandekerckhove, we challe
 
 You can watch my presentation here:
 
-<div style="text-align: center">
-    <iframe width="760" height="455" src="https://www.youtube.com/embed/1FBg9AXaBdk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="event-embed">
+    <iframe src="https://www.youtube.com/embed/1FBg9AXaBdk" title="Virtual MathPsych 2022 talk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <details>
@@ -42,5 +41,3 @@ We explore the dimensionality and structure of general speed across individuals 
 
 One way of contextualizing these results is to compare them to human anthropometrics. While human bodies are similar in many ways, they seemingly vary on a "size" factor. We analyze a publicly available set of 93 body measurements collected across 6,068 US military personnel. Indeed, a strong first factor of size emerges, but so does a second factor that captures how heavy people are for their height. Perhaps surprisingly, the first-factor solution for general speed is comparable to or even stronger than it is for anthropometrics. Moreover, we were unable to identify a coherent second factor for general speed. We conclude that general speed is likely unidimensional.
 </details>
-
-
