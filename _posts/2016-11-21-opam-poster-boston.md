@@ -3,6 +3,7 @@ layout: event
 title: Poster presentation at OPAM
 date: 2016-11-21
 location: Boston, Massachusetts
+event_tag: "Poster presentation"
 ---
 
 I had the exciting opportunity to present my undergraduate research at the 2016 Object Perception, Attention, and Memory (OPAM) meeting in Boston, Massachusetts. This was my first international conference attendance!

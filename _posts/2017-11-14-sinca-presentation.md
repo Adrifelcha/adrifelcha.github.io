@@ -3,6 +3,7 @@ layout: event
 title: Conference presentation at SINCA VI
 date: 2017-11-14
 location: Tlaxcala, Mexico
+event_tag: "Conference Talk"
 ---
 
 In November 2017, the lab traveled to the beautiful city of Tlaxcala to participate in the VI International Seminar about Behavior and Applications (SINCA), hosted by the University of Tlaxcala. 

@@ -1114,6 +1114,46 @@ ul.dropdown > li.subs:first-child {
     gap: 20px;
 }
 
+.blog-list .event-list-grid {
+    grid-template-columns: 15% minmax(0, 1fr) auto;
+    gap: 16px;
+}
+
+.event-tag {
+    justify-self: end;
+    position: relative;
+    display: inline-block;
+    color: #A67C2E;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.82em;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    text-align: center;
+    padding: 5px 12px 5px 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background: #F3EBD9;
+    /* Tag silhouette: pointed left edge */
+    clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0% 50%);
+    /* Darkened burnt-gold border that follows the clipped shape */
+    filter:
+        drop-shadow(1px 0 0 #8A6520)
+        drop-shadow(-1px 0 0 #8A6520)
+        drop-shadow(0 1px 0 #8A6520)
+        drop-shadow(0 -1px 0 #8A6520)
+        drop-shadow(1px 1px 0 #8A6520)
+        drop-shadow(-1px 1px 0 #8A6520)
+        drop-shadow(1px -1px 0 #8A6520)
+        drop-shadow(-1px -1px 0 #8A6520);
+}
+
+.event-tag::before,
+.event-tag::after {
+    content: none;
+}
+
 .post-date {
     color: #B22222;
     font-size: 1em;
@@ -1313,6 +1353,11 @@ ul.dropdown > li.subs:first-child {
         gap: 10px;
     }
 
+    .blog-list .event-list-grid {
+        grid-template-columns: 22% minmax(0, 1fr) auto;
+        gap: 10px;
+    }
+
     .post-date {
         font-size: 0.9em;
         padding-right: 10px;
@@ -1320,6 +1365,10 @@ ul.dropdown > li.subs:first-child {
 
     .blog-link {
         font-size: 1em;
+    }
+
+    .event-tag {
+        font-size: 0.8em;
     }
 }
 
@@ -1672,6 +1721,19 @@ ul.dropdown > li.subs:first-child {
         gap: 10px;
     }
 
+    .blog-list .event-list-grid {
+        grid-template-columns: 1fr auto;
+        gap: 8px 12px;
+    }
+
+    .blog-list .event-list-grid .post-date {
+        grid-column: 1 / -1;
+        text-align: left;
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 2px;
+    }
+
     .post-date {
         font-size: 0.9em;
         padding-right: 10px;
@@ -1679,6 +1741,10 @@ ul.dropdown > li.subs:first-child {
 
     .blog-link {
         font-size: 1em;
+    }
+
+    .event-tag {
+        font-size: 0.78em;
     }
 }
 
@@ -1772,6 +1838,11 @@ ul.dropdown > li.subs:first-child {
         gap: 8px;
     }
 
+    .blog-list .event-list-grid {
+        grid-template-columns: 1fr auto;
+        gap: 6px 10px;
+    }
+
     .post-date {
         font-size: 0.85em;
         padding-right: 8px;
@@ -1779,6 +1850,10 @@ ul.dropdown > li.subs:first-child {
 
     .blog-link {
         font-size: 0.95em;
+    }
+
+    .event-tag {
+        font-size: 0.75em;
     }
     
     .site-header .name-title {

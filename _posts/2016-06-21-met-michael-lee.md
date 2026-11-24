@@ -3,6 +3,7 @@ layout: event
 title: Meeting Michael D. Lee - First encounter with Bayesian modeling!
 date: 2016-06-21
 location: Mexico City, Mexico
+event_tag: "Career milestone"
 ---
 
 A pivotal moment in my career came on June of 2016 when I had the opportunity to meet <a class='link' href="http://faculty.sites.uci.edu/mdlee/">Michael D. Lee</a> during his second visit to UNAM.

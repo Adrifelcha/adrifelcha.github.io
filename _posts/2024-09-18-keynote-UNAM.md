@@ -3,6 +3,7 @@ layout: event
 title: Invited Keynote at UNAM
 date: 2024-09-18
 location: Mexico City, Mexico
+event_tag: "Conference Talk"
 ---
 
 I had the honor of returning to my alma mater, UNAM, to deliver an invited keynote presentation alongside my former Lab25 colleague, Darío Trujano. It was a special moment to share our research journeys that began in this very institution.

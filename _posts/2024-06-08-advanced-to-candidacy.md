@@ -3,6 +3,7 @@ layout: event
 title: Advanced to Candidacy
 date: 2024-06-08
 location: Irvine, California
+event_tag: "Career milestone"
 ---
 
 On June 8th, 2024, I advanced to candidacy in my Ph.D. program at UC Irvine!

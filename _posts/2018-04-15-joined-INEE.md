@@ -3,6 +3,7 @@ layout: event
 title: Joined the National Institute for Education Evaluation (INEE)
 date: 2018-04-15
 location: Mexico City, Mexico
+event_tag: "New job"
 ---
 
 Shortly after completing my bachelor's degree, I joined the National Institute for Educational Evaluation (INEE) in Mexico City as the lead psychometrist of the Basic Education Division at the Department of Assessment of Teachers and Principals. This role offered me a unique opportunity to apply my statistical and methodological skills to real-world educational challenges.

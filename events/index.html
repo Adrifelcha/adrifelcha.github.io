@@ -6,7 +6,17 @@ title: Events and academic life updates!
 <div class="publications-container">
     <div class="section-container">
         <h2 class="section-title">Events & Updates!</h2>
-        <div class="blog-list">
+
+        <div class="keyword-filters" id="event-tag-filters">
+            <button class="keyword-btn active" data-keyword="all">All</button>
+            <button class="keyword-btn" data-keyword="new-job">New job</button>
+            <button class="keyword-btn" data-keyword="career-milestone">Career milestone</button>
+            <button class="keyword-btn" data-keyword="poster-presentation">Poster presentation</button>
+            <button class="keyword-btn" data-keyword="conference-talk">Conference Talk</button>
+            <button class="keyword-btn" data-keyword="workshop">Workshop</button>
+        </div>
+
+        <div class="blog-list" id="events-list">
             {% assign event_posts = site.posts | where: "category", "event" %}
             {% if event_posts.size == 0 %}
                 {% assign event_posts = site.posts | where: "categories", "event" %}
@@ -23,16 +33,31 @@ title: Events and academic life updates!
             {% endif %}
             
             {% for post in event_posts %}
-            <a href="{{ post.url }}" class="blog-item-link">
+            {% assign event_keyword = "" %}
+            {% if post.event_tag == "New job" %}
+                {% assign event_keyword = "new-job" %}
+            {% elsif post.event_tag == "Career milestone" %}
+                {% assign event_keyword = "career-milestone" %}
+            {% elsif post.event_tag == "Poster presentation" %}
+                {% assign event_keyword = "poster-presentation" %}
+            {% elsif post.event_tag == "Conference Talk" %}
+                {% assign event_keyword = "conference-talk" %}
+            {% elsif post.event_tag == "Workshop" %}
+                {% assign event_keyword = "workshop" %}
+            {% endif %}
+            <a href="{{ post.url }}" class="blog-item-link event-item" data-keyword="{{ event_keyword }}">
                 <div class="blog-item">
                     <div class="blog-content">
-                        <div class="blog-grid">
+                        <div class="blog-grid event-list-grid">
                             <div class="post-date">
                                 <span class="year">{{ post.date | date: "%Y" }}</span>{{ post.date | date: ", %b %d" }}
                             </div>
                             <div class="post-title">
                                 <span class="blog-link">{{ post.title }}</span>
                             </div>
+                            {% if post.event_tag %}
+                            <div class="event-tag">{{ post.event_tag }}</div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -51,3 +76,28 @@ title: Events and academic life updates!
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const keywordButtons = document.querySelectorAll('#event-tag-filters .keyword-btn');
+    const eventItems = document.querySelectorAll('#events-list .event-item');
+
+    keywordButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const keyword = this.getAttribute('data-keyword');
+
+            keywordButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            eventItems.forEach(item => {
+                if (keyword === 'all') {
+                    item.style.display = '';
+                } else {
+                    const itemKeyword = item.getAttribute('data-keyword');
+                    item.style.display = (itemKeyword === keyword) ? '' : 'none';
+                }
+            });
+        });
+    });
+});
+</script>

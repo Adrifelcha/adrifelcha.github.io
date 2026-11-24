@@ -3,6 +3,7 @@ layout: event
 title: Poster presentation at Psychonomics
 date: 2024-11-23
 location: Manhattan, New York
+event_tag: "Poster presentation"
 ---
 
 I had the honor of presenting my research at the annual Psychonomic Society meeting in New York City. My work on the Bayesian implementation of the EZ-drift diffusion model was recognized with a Graduate Travel Award, supporting my participation in this amazing conference which offered a great opportunity to obtain feedback from leading researchers in the field.

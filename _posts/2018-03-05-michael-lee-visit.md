@@ -3,6 +3,7 @@ layout: event
 title: Michael Lee visits UNAM again
 date: 2018-03-05
 location: Mexico City, Mexico
+event_tag: "Career milestone"
 ---
 
 In March 2018, we had the pleasure of hosting Dr. Michael Lee for his third visit to Lab25. Having first met him in 2016, it was remarkable to see how my understanding of Bayesian cognitive modeling had evolved with each of his visits.

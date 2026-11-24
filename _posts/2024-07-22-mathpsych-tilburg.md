@@ -3,6 +3,7 @@ layout: event
 title: Conference presentation at MathPsych 2024
 date: 2024-07-22
 location: Tilburg, Netherlands
+event_tag: "Conference Talk"
 ---
 
 I had a fantastic time presenting my research at the 2024 Meeting of the Society for Mathematical Psychology in Tilburg, Netherlands. My participation was supported by the Women of MathPsych - Professional Representation for Inclusivity and Minority Empowerment (WoMP-PRIME) Travel and Networking Award, which provided valuable opportunities to connect with leading researchers in mathematical psychology.

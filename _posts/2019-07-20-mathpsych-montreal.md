@@ -3,6 +3,7 @@ layout: event
 title: Poster presentation at MathPsych
 date: 2019-07-20
 location: Montreal, Canada
+event_tag: "Poster presentation"
 ---
 
 From July 19th to 23rd, 2019, I had the exciting opportunity to attend the 52nd Annual Meeting of the Society for Mathematical Psychology (MathPsych) in Montreal, Canada. This marked my first participation in what would become my academic home conference.

@@ -3,6 +3,7 @@ layout: event
 title: People's Choice Award at Virtual MathPsych 2022!
 date: 2022-07-11
 location: Virtual
+event_tag: "Career milestone"
 ---
 
 I'm thrilled to share that my talk at the 2022 Virtual Mathematical Psychology conference received the People's Choice Award! This recognition from the mathematical psychology community means a lot to me, especially given this was my first conference presentation as a graduate student.
