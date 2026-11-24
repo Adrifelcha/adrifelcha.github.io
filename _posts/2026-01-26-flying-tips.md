@@ -1,7 +1,8 @@
 ---
 layout: blog
 title: Tips for suffering less while in a plane
-date: 2026-02-17
+date: 2026-01-26
+last_updated: 2026-02-17
 category: blog
 ---
 

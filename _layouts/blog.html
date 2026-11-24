@@ -9,6 +9,7 @@ layout: default
             {% if blog_posts.size == 0 %}
                 {% assign blog_posts = site.posts | where: "categories", "blog" %}
             {% endif %}
+            {% assign blog_posts = blog_posts | sort: "last_updated" | reverse %}
             
             {% assign prev_post = nil %}
             {% assign next_post = nil %}
@@ -51,7 +52,8 @@ layout: default
             {% endif %}
         </div>
         <div class="blog-content">
-            <div class="blog-date">Last updated: {{ page.date | date: "%d" }}/{{ page.date | date: "%b" }}/<span class="year">{{ page.date | date: "%Y" }}</span></div>
+            {% assign display_updated = page.last_updated | default: page.date %}
+            <div class="blog-date">Last updated: {{ display_updated | date: "%-d %b %Y" }}</div>
             <div class="blog-body">
                 {{ content }}
             </div>

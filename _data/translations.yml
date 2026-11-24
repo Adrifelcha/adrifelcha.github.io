@@ -8,8 +8,8 @@ en:
     projects: "Research Projects"
     teaching: "Teaching Materials"
     blog: "Adri's Blog"
-    events: "Events and Updates!"
-    thoughts: "Opinions and Thoughts :O"
+    events: "Events & Updates!"
+    thoughts: "Opinions and Thoughts"
   home:
     greeting: "Hi! Nice to meet you"
     bio_p1: "I am Dr. Adriana Felisa Chávez De la Peña <button type='button' class='name-audio-btn' aria-label='Hear the pronunciation of Adriana Felisa Chávez De la Peña'>[ <i class='fa fa-volume-up' aria-hidden='true'></i> ]</button>, a Mexican quantitative psychologist primarily interested in psychometrics, measurement, assessment, and the modeling of cognitive processes."
@@ -47,7 +47,7 @@ es:
     teaching: "Materiales de Enseñanza"
     blog: "Blog de Adri"
     events: "Eventos y Actualizaciones!"
-    thoughts: "Opiniones y Pensamientos :O"
+    thoughts: "Opiniones y Pensamientos"
   home:
     greeting: "¡Holi! Mucho gusto"
     bio_p1: "Soy la Dra. Adriana Felisa Chávez De la Peña, una psicóloga cuantitativa mexicana (<i>De Iztapalapa para el mundo!</i>) interesada principalmente en temas de psicometría, medición, evaluación y modelamiento de procesos cognitivos."

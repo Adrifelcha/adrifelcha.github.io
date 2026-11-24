@@ -2,6 +2,7 @@
 layout: blog
 title: Visiting Mexico city for the first time? 
 date: 2026-01-20
+last_updated: 2026-01-20
 category: blog
 ---
 
