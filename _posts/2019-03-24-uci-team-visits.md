@@ -3,7 +3,7 @@ layout: event
 title: UCI Bayesian team visits UNAM!
 date: 2019-03-24
 location: Mexico City, Mexico
-event_tag: "Career milestone"
+event_tag: "Collab symposiums"
 ---
 
 In March 2019, we had the pleasure of hosting an exceptional team from UC Irvine at Lab25. Dr. Michael Lee returned to UNAM, this time accompanied by distinguished colleagues and students from UCI's cognitive sciences department:

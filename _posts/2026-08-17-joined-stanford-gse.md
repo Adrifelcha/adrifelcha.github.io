@@ -3,7 +3,7 @@ layout: event
 title: Joined Stanford's Graduate School of Education
 date: 2026-08-17
 location: Palo Alto, California
-event_tag: "New job"
+event_tag: "New position"
 ---
 
 In August 2026, I joined the Stanford Graduate School of Education as a postdoctoral scholar. I am part of the [SPARK Lab](https://sparklab.stanford.edu/){:target="_blank"} (Stanford Project on Adaptation and Resilience in Kids) at the Stanford Center for Early Childhood, working with Dr. Jelena Obradović.

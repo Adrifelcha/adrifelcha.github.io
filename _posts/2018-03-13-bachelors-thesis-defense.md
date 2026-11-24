@@ -3,7 +3,7 @@ layout: event
 title: Bachelor's Thesis Defense
 date: 2018-03-13
 location: Mexico City, Mexico
-event_tag: "Career milestone"
+event_tag: "Milestone celebrations"
 ---
 
 On March 13th, 2018, I successfully defended my bachelor's thesis "Studies on Signal Detection" at the School of Psychology, UNAM. This marked the completion of my B.A. in Psychology with a GPA of 9.79/10.0, graduating with merits.

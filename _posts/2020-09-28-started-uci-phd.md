@@ -3,7 +3,7 @@ layout: event
 title: Started Grad School at UC Irvine
 date: 2020-09-28
 location: Irvine, California
-event_tag: "Career milestone"
+event_tag: "Pivotal moment!"
 ---
 
 In Fall 2020, I began my Ph.D. journey at the University of California, Irvine! I joined the Department of Cognitive Sciences under the mentorship of an exceptional team of advisors:

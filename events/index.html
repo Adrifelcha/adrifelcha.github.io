@@ -9,8 +9,10 @@ title: Events and academic life updates!
 
         <div class="keyword-filters" id="event-tag-filters">
             <button class="keyword-btn active" data-keyword="all">All</button>
-            <button class="keyword-btn" data-keyword="new-job">New job</button>
-            <button class="keyword-btn" data-keyword="career-milestone">Career milestone</button>
+            <button class="keyword-btn" data-keyword="new-position">New position</button>
+            <button class="keyword-btn" data-keyword="pivotal-moment">Pivotal moment!</button>
+            <button class="keyword-btn" data-keyword="milestone-celebrations">Milestone celebrations</button>
+            <button class="keyword-btn" data-keyword="collab-symposiums">Collab symposiums</button>
             <button class="keyword-btn" data-keyword="poster-presentation">Poster presentation</button>
             <button class="keyword-btn" data-keyword="conference-talk">Conference Talk</button>
             <button class="keyword-btn" data-keyword="workshop">Workshop</button>
@@ -34,10 +36,14 @@ title: Events and academic life updates!
             
             {% for post in event_posts %}
             {% assign event_keyword = "" %}
-            {% if post.event_tag == "New job" %}
-                {% assign event_keyword = "new-job" %}
-            {% elsif post.event_tag == "Career milestone" %}
-                {% assign event_keyword = "career-milestone" %}
+            {% if post.event_tag == "New position" %}
+                {% assign event_keyword = "new-position" %}
+            {% elsif post.event_tag == "Pivotal moment!" %}
+                {% assign event_keyword = "pivotal-moment" %}
+            {% elsif post.event_tag == "Milestone celebrations" %}
+                {% assign event_keyword = "milestone-celebrations" %}
+            {% elsif post.event_tag == "Collab symposiums" %}
+                {% assign event_keyword = "collab-symposiums" %}
             {% elsif post.event_tag == "Poster presentation" %}
                 {% assign event_keyword = "poster-presentation" %}
             {% elsif post.event_tag == "Conference Talk" %}
