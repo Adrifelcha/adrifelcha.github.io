@@ -7,7 +7,7 @@ en:
     posters: "Posters"
     projects: "Research Projects"
     teaching: "Teaching Materials"
-    blog: "Adri's Blog"
+    blog: "<span class=\"nav-blog-title\">Adri's Blog</span><span class=\"nav-blog-subtitle\">Events &amp; Opinions</span>"
     events: "Events & Updates!"
     thoughts: "Opinions and Thoughts"
   home:
@@ -45,7 +45,7 @@ es:
     posters: "Pósters"
     projects: "Proyectos de Investigación"
     teaching: "Materiales de Enseñanza"
-    blog: "Blog de Adri"
+    blog: "<span class=\"nav-blog-title\">Blog de Adri</span><span class=\"nav-blog-subtitle\">Eventos y Opiniones</span>"
     events: "Eventos y Actualizaciones!"
     thoughts: "Opiniones y Pensamientos"
   home:

@@ -579,6 +579,30 @@ hr.style18:before {
     text-decoration: none;
 }
 
+.mainnav > li > a.nav-blog-link {
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.15;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav-blog-title {
+    display: block;
+    font-size: 1.05em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav-blog-subtitle {
+    display: block;
+    font-size: 0.72em;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    opacity: 0.95;
+}
+
 /* Dropdown Menu */
 .dropdown {
     position: absolute;
