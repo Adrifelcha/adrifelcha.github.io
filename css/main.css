@@ -1120,10 +1120,13 @@ ul.dropdown > li.subs:first-child {
 }
 
 .event-tag {
+    --tag-ink: #A67C2E;
+    --tag-fill: #F3EBD9;
+    --tag-edge: #8A6520;
     justify-self: end;
     position: relative;
     display: inline-block;
-    color: #A67C2E;
+    color: var(--tag-ink);
     font-family: 'Lato', sans-serif;
     font-size: 0.82em;
     font-weight: 700;
@@ -1133,25 +1136,69 @@ ul.dropdown > li.subs:first-child {
     text-align: center;
     padding: 5px 12px 5px 16px;
     border: none;
-    border-radius: 0 4px 4px 0;
-    background: #F3EBD9;
-    /* Tag silhouette: pointed left edge */
+    border-radius: 0;
+    background: var(--tag-fill);
+    /* Default tag silhouette: pointed left edge */
     clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0% 50%);
-    /* Darkened burnt-gold border that follows the clipped shape */
     filter:
-        drop-shadow(1px 0 0 #8A6520)
-        drop-shadow(-1px 0 0 #8A6520)
-        drop-shadow(0 1px 0 #8A6520)
-        drop-shadow(0 -1px 0 #8A6520)
-        drop-shadow(1px 1px 0 #8A6520)
-        drop-shadow(-1px 1px 0 #8A6520)
-        drop-shadow(1px -1px 0 #8A6520)
-        drop-shadow(-1px -1px 0 #8A6520);
+        drop-shadow(1px 0 0 var(--tag-edge))
+        drop-shadow(-1px 0 0 var(--tag-edge))
+        drop-shadow(0 1px 0 var(--tag-edge))
+        drop-shadow(0 -1px 0 var(--tag-edge))
+        drop-shadow(1px 1px 0 var(--tag-edge))
+        drop-shadow(-1px 1px 0 var(--tag-edge))
+        drop-shadow(1px -1px 0 var(--tag-edge))
+        drop-shadow(-1px -1px 0 var(--tag-edge));
 }
 
 .event-tag::before,
 .event-tag::after {
     content: none;
+}
+
+/* New job — classic left-point tag, warm gold */
+.event-tag--new-job {
+    --tag-ink: #9A7320;
+    --tag-fill: #F4E8C8;
+    --tag-edge: #7A5A18;
+    clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0% 50%);
+    padding: 5px 12px 5px 16px;
+}
+
+/* Career milestone — banner with both ends clipped, deeper brown-gold */
+.event-tag--career-milestone {
+    --tag-ink: #7A4E28;
+    --tag-fill: #EFE0C8;
+    --tag-edge: #5C3A1C;
+    clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0% 50%);
+    padding: 5px 16px;
+}
+
+/* Poster presentation — soft parallelogram, amber yellow */
+.event-tag--poster-presentation {
+    --tag-ink: #A67812;
+    --tag-fill: #F7E9B4;
+    --tag-edge: #8A640E;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+    padding: 5px 14px 5px 12px;
+}
+
+/* Conference Talk — right-pointing flag, terracotta orange */
+.event-tag--conference-talk {
+    --tag-ink: #A85A2A;
+    --tag-fill: #F3DCC8;
+    --tag-edge: #85461F;
+    clip-path: polygon(0% 0%, calc(100% - 10px) 0%, 100% 50%, calc(100% - 10px) 100%, 0% 100%);
+    padding: 5px 16px 5px 12px;
+}
+
+/* Workshop — ticket notch on left, warm honey orange */
+.event-tag--workshop {
+    --tag-ink: #B06B22;
+    --tag-fill: #F6E2C0;
+    --tag-edge: #8A521A;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 70%, 8px 50%, 0% 30%);
+    padding: 5px 12px 5px 14px;
 }
 
 .post-date {
